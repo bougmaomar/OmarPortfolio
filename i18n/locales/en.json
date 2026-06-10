@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "about": "Why",
+    "work": "Experience",
+    "services": "Services",
+    "process": "Process",
+    "cta": "Let's talk"
+  },
+  "hero": {
+    "eyebrow": "Web developer · Marrakesh",
+    "heading": "I build websites and tools that get small businesses more customers and",
+    "headingEm": "less busywork",
+    "sub": "Nearly four years' experience building and running real software — now helping honest local businesses get results without the jargon. Based in Marrakesh.",
+    "cta1": "See my experience",
+    "cta2": "Start a conversation"
+  },
+  "reframe": {
+    "point1": "Fixed quotes, no surprises",
+    "point2": "Plain language, no jargon",
+    "point3": "You own everything I build"
+  },
+  "about": {
+    "eyebrow": "Why I care",
+    "heading": "The honest reason I do this.",
+    "body": "Helping people is the thing I care about most — and I can't reach everyone myself. So I build the tools that let honest local businesses reach the people who need them, and spend less of their day fighting their own systems. More customers, less wasted time, more good done. That's the whole reason I do this work.",
+    "signature": "— Omar"
+  },
+  "work": {
+    "eyebrow": "Experience",
+    "title": "Nearly four years building and running real systems.",
+    "duration": "3.8 years",
+    "role": "Development · DevOps · Security",
+    "intro": "I spent close to four years at a startup wearing three hats at once — writing the software, running the infrastructure it shipped on, and keeping it secure. I owned problems from the first idea to production, and learned how systems actually survive contact with real users.",
+    "highlights": [
+      {
+        "label": "Built the product",
+        "desc": "Full-stack development end to end — frontend, backend, and the data in between, designed as one connected whole."
+      },
+      {
+        "label": "Ran the infrastructure",
+        "desc": "DevOps from deployment to monitoring — shipping features into production reliably and keeping them running as people relied on them every day."
+      },
+      {
+        "label": "Kept it secure",
+        "desc": "Treated security as part of the build, not an afterthought — hardening what we shipped against real-world risk."
+      }
+    ],
+    "skillsLabel": "What I worked across",
+    "skills": ["Full-stack development", "DevOps & deployment", "Security", "Automation", "Infrastructure", "Maintenance"],
+    "note": "Now I'm taking what I learned across development, operations, and security inside one company and offering it directly to the honest businesses that need it most."
+  },
+  "services": {
+    "eyebrow": "What I build",
+    "heading1": "The right medium",
+    "heading2": "for the real problem.",
+    "sub": "I don't lead with a technology stack. I start with what you're trying to accomplish and choose whatever makes the most sense — often simpler than you expect.",
+    "items": [
+      { "title": "Websites & Web Apps", "desc": "From landing pages to full platforms — built to convert, to last, and to be yours after I leave." },
+      { "title": "Internal Systems", "desc": "Dashboards, tools, and workflows your team will actually use — designed around how you already think." },
+      { "title": "Automation", "desc": "Remove the repetitive. Free your people for the work that actually needs a human behind it." },
+      { "title": "Connected Devices", "desc": "IoT solutions that bridge your digital operations and physical world — practical, not just clever." },
+      { "title": "Bespoke Software", "desc": "Whatever the problem needs. Purpose-built, documented, and handed over — not held hostage." }
+    ]
+  },
+  "process": {
+    "eyebrow": "How I work",
+    "heading1": "Simple commitments.",
+    "heading2": "Kept every time.",
+    "principles": [
+      "It's not about me. I lead with your world, not my skill list.",
+      "You own everything — no lock-in, no jargon, plain language as we go.",
+      "I'm measured on your outcome, not on my cleverness.",
+      "Honest work, for honest businesses, only.",
+      "I build things you can still run after I'm gone."
+    ],
+    "audit": "You may have hired a developer who vanished halfway, overcharged, or left you with something only they could touch. <strong>That's exactly why I work this way — stated out loud, so it can't surprise either of us.</strong>"
+  },
+  "contact": {
+    "eyebrow": "Let's talk",
+    "heading1": "Ready to grow",
+    "heading2": "your impact?",
+    "sub": "I start every conversation the same way — understanding your world before I say anything about mine.",
+    "cta": "Start the conversation",
+    "orEmail": "Or email me directly at",
+    "orWhatsapp": "Or message me on WhatsApp at",
+    "whatsappAria": "Chat with me on WhatsApp",
+    "whatsappLabel": "Message me",
+    "discoveryLabel": "On our first call, I'll ask:",
+    "questions": [
+      "What made you reach out now?",
+      "What's the hardest part of running this, day to day?",
+      "What would have to change for this to feel worth it to you?"
+    ],
+    "tip": "I'll keep summarizing your world back until you say <strong>\"that's right.\"</strong> Let \"no\" stay safe — that's the whole point.",
+    "closingNote": "\"Lead with the why. The what will take care of itself.\"",
+    "location": "Marrakesh, Morocco"
+  }
+}

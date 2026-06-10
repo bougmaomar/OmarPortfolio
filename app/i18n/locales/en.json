@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "about": "About",
+    "work": "Work",
+    "services": "Services",
+    "process": "Process",
+    "cta": "Let's talk"
+  },
+  "hero": {
+    "eyebrow": "Available for projects · Marrakesh",
+    "heading": "I grow the businesses that make life better — so their good",
+    "headingEm": "reaches further",
+    "sub": "Helping people is the single thing that gives me the most joy. I can't reach everyone myself — so I build the tools that let honest businesses reach the people who need them.",
+    "cta1": "See my work",
+    "cta2": "Start a conversation"
+  },
+  "reframe": {
+    "line1": "\"You already change lives.",
+    "line2": "I remove what stands between you",
+    "line3": "and the people who need you.\""
+  },
+  "about": {
+    "eyebrow": "The Golden Circle",
+    "circles": [
+      {
+        "label": "Why",
+        "category": "Belief",
+        "body": "To help honest businesses do more good, so more people get the help they were built to give. <strong>It pains me to watch people struggle when help already exists.</strong>"
+      },
+      {
+        "label": "How",
+        "category": "Approach",
+        "body": "I start with the people you serve, not the tech. I work in whatever medium the problem needs — websites, systems, automation, connected devices, custom software — and I build things <strong>you can still run after I'm gone</strong>."
+      },
+      {
+        "label": "What",
+        "category": "Offer",
+        "body": "Digital tools chosen to grow your <strong>impact</strong>, not just your revenue: sites, internal systems, automation, devices, and bespoke programs."
+      }
+    ]
+  },
+  "work": {
+    "eyebrow": "Selected work",
+    "title": "Businesses I've helped grow.",
+    "caseStudy": "Case study",
+    "projects": [
+      {
+        "category": "Hospitality",
+        "description": "Rebuilt their online presence with a direct booking engine — removing OTA dependency and letting their authentic story do the selling.",
+        "impact": "+40% direct bookings in 90 days"
+      },
+      {
+        "category": "Agriculture",
+        "description": "B2B ordering platform and logistics dashboard for a small organic herb cooperative, connecting them with restaurants and health shops across Morocco.",
+        "impact": "3× wholesale reach"
+      },
+      {
+        "category": "Education",
+        "description": "Volunteer matching platform and student progress tracker for a tutoring cooperative serving underprivileged students in Casablanca.",
+        "impact": "60% less admin overhead"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "What I build",
+    "heading1": "The right medium",
+    "heading2": "for the real problem.",
+    "sub": "I don't lead with a technology stack. I start with what you're trying to accomplish and choose whatever makes the most sense — often simpler than you expect.",
+    "items": [
+      { "title": "Websites & Web Apps", "desc": "From landing pages to full platforms — built to convert, to last, and to be yours after I leave." },
+      { "title": "Internal Systems", "desc": "Dashboards, tools, and workflows your team will actually use — designed around how you already think." },
+      { "title": "Automation", "desc": "Remove the repetitive. Free your people for the work that actually needs a human behind it." },
+      { "title": "Connected Devices", "desc": "IoT solutions that bridge your digital operations and physical world — practical, not just clever." },
+      { "title": "Bespoke Software", "desc": "Whatever the problem needs. Purpose-built, documented, and handed over — not held hostage." }
+    ]
+  },
+  "process": {
+    "eyebrow": "How I work",
+    "heading1": "Simple commitments.",
+    "heading2": "Kept every time.",
+    "principles": [
+      "It's not about me. I lead with your world, not my skill list.",
+      "You own everything — no lock-in, no jargon, plain language as we go.",
+      "I'm measured on your outcome, not on my cleverness.",
+      "Honest work, for honest businesses, only.",
+      "I build things you can still run after I'm gone."
+    ],
+    "audit": "You may have hired a developer who vanished halfway, overcharged, or left you with something only they could touch. <strong>That's exactly why I work this way — stated out loud, so it can't surprise either of us.</strong>"
+  },
+  "contact": {
+    "eyebrow": "Let's talk",
+    "heading1": "Ready to grow",
+    "heading2": "your impact?",
+    "sub": "I start every conversation the same way — understanding your world before I say anything about mine.",
+    "cta": "Start the conversation",
+    "discoveryLabel": "On our first call, I'll ask:",
+    "questions": [
+      "What made you reach out now?",
+      "What's the hardest part of running this, day to day?",
+      "What would have to change for this to feel worth it to you?"
+    ],
+    "tip": "I'll keep summarizing your world back until you say <strong>\"that's right.\"</strong> Let \"no\" stay safe — that's the whole point.",
+    "closingNote": "\"Lead with the why. The what will take care of itself.\"",
+    "location": "Marrakesh, Morocco"
+  }
+}

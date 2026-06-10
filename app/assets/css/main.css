@@ -1,0 +1,202 @@
+/* ─── Design tokens ──────────────────────────────── */
+:root {
+  --pine: #173A33;
+  --pine-deep: #0E2A24;
+  --honey: #D98A36;
+  --honey-soft: #E9B567;
+  --sage: #5E7A6E;
+  --paper: #EEF0EA;
+  --paper-2: #E4E8DF;
+  --ink: #1A241F;
+  --ink-soft: #46554E;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --max-w: 1100px;
+}
+
+/* ─── Reset ──────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a[href],
+button,
+[role="button"],
+summary,
+label[for] {
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+/* ─── Arabic font override ───────────────────────── */
+[dir="rtl"] body {
+  font-family: 'Cairo', system-ui, sans-serif;
+}
+[dir="rtl"] .serif {
+  font-family: 'Cairo', system-ui, sans-serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+}
+
+/* ─── Typography ─────────────────────────────────── */
+.serif {
+  font-family: 'Fraunces', Georgia, serif;
+  font-optical-sizing: auto;
+}
+.eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--sage);
+}
+[dir="rtl"] .eyebrow {
+  letter-spacing: 0.04em;
+}
+
+/* ─── Buttons ────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: 6px;
+  font-size: 0.94rem;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: all 0.22s var(--ease);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-primary {
+  background: var(--honey);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: var(--honey-soft);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(217, 138, 54, 0.38);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--paper);
+  border: 1.5px solid rgba(238, 240, 234, 0.38);
+}
+.btn-outline:hover {
+  border-color: rgba(238, 240, 234, 0.8);
+  background: rgba(238, 240, 234, 0.08);
+}
+.btn-pine {
+  background: var(--pine);
+  color: var(--paper);
+}
+.btn-pine:hover {
+  background: var(--pine-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(23, 58, 51, 0.28);
+}
+
+/* ─── Scroll reveal ──────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s var(--ease), transform 0.75s var(--ease);
+  will-change: transform, opacity;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  will-change: auto;
+}
+.reveal-d1 { transition-delay: 0.1s; }
+.reveal-d2 { transition-delay: 0.2s; }
+.reveal-d3 { transition-delay: 0.3s; }
+.reveal-d4 { transition-delay: 0.4s; }
+.reveal-d5 { transition-delay: 0.5s; }
+.reveal-d6 { transition-delay: 0.6s; }
+
+/* ─── Layout ─────────────────────────────────────── */
+.wrap {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 clamp(24px, 6vw, 72px);
+}
+
+/* ─── RTL overrides ──────────────────────────────── */
+[dir="rtl"] .hero__scroll {
+  left: auto;
+  right: clamp(24px, 6vw, 72px);
+}
+[dir="rtl"] .hero__ripple {
+  right: auto;
+  left: -14%;
+}
+[dir="rtl"] .hero__scroll-line {
+  transform-origin: right;
+}
+[dir="rtl"] .audit {
+  border-left: none;
+  border-right: 3px solid var(--honey);
+  border-radius: 6px 0 0 6px;
+}
+[dir="rtl"] .project-card::before {
+  left: auto;
+  right: 0;
+  transform-origin: bottom;
+}
+[dir="rtl"] .contact__info {
+  align-items: flex-start;
+  text-align: left;
+}
+[dir="rtl"] .contact__q-mark {
+  order: 1;
+}
+[dir="rtl"] .nav__links a {
+  direction: rtl;
+}
+
+/* ─── Reduced motion ─────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

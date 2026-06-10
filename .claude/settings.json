@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Remove-Item -Recurse -Force README.md, index.html, node_modules, package-lock.json, package.json, public, src, vite.config.js)",
+      "Bash(curl -sf http://localhost:3000)",
+      "Bash(curl -s http://localhost:3000/fr)",
+      "Bash(curl -s http://localhost:3000/ar/)",
+      "Bash(echo \"exit: $?\")"
+    ]
+  }
+}

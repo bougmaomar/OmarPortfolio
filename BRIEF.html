@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand Brief · v2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pine:#173A33;
+    --pine-deep:#0E2A24;
+    --honey:#D98A36;
+    --honey-soft:#E9B567;
+    --sage:#5E7A6E;
+    --paper:#EEF0EA;
+    --paper-2:#E4E8DF;
+    --ink:#1A241F;
+    --ink-soft:#46554E;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Inter",system-ui,sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .page{max-width:780px;margin:0 auto;background:var(--paper);}
+
+  /* ---------- shared ---------- */
+  .eyebrow{
+    font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
+    font-weight:600;color:var(--sage);
+  }
+  .serif{font-family:"Fraunces",Georgia,serif;font-optical-sizing:auto;}
+  .wrap{padding:0 clamp(24px,6vw,64px);}
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;overflow:hidden;
+    background:var(--pine);color:var(--paper);
+    padding:clamp(48px,9vw,84px) clamp(24px,6vw,64px) clamp(52px,9vw,80px);
+  }
+  .ripple{
+    position:absolute;top:-30%;right:-18%;width:min(560px,90%);aspect-ratio:1;
+    opacity:.5;pointer-events:none;
+  }
+  .ripple circle{fill:none;stroke:var(--honey-soft);stroke-width:1.1;transform-origin:center;}
+  .r1{animation:pulse 7s ease-in-out infinite}
+  .r2{animation:pulse 7s ease-in-out .9s infinite}
+  .r3{animation:pulse 7s ease-in-out 1.8s infinite}
+  .r4{animation:pulse 7s ease-in-out 2.7s infinite}
+  @keyframes pulse{
+    0%,100%{opacity:.18}
+    50%{opacity:.55}
+  }
+  .hero-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;position:relative;z-index:2}
+  .hero .eyebrow{color:var(--honey-soft)}
+  .name{font-family:"Fraunces",serif;font-weight:500;font-size:1.05rem;color:var(--paper)}
+  .why{
+    position:relative;z-index:2;
+    font-family:"Fraunces",serif;font-weight:400;
+    font-size:clamp(1.9rem,5.4vw,3rem);line-height:1.12;letter-spacing:-.01em;
+    margin:clamp(36px,7vw,56px) 0 0;max-width:16ch;
+  }
+  .why em{font-style:italic;color:var(--honey-soft)}
+  .why-sub{
+    position:relative;z-index:2;
+    margin-top:22px;max-width:46ch;color:#CBD8D1;font-size:1.02rem;
+  }
+  .why-tag{
+    position:relative;z-index:2;margin-top:20px;display:inline-block;
+    font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;
+    color:var(--pine);background:var(--honey-soft);padding:6px 12px;border-radius:20px;
+  }
+
+  /* ---------- reframe band ---------- */
+  .reframe{
+    background:var(--paper-2);
+    padding:clamp(30px,5vw,40px) clamp(24px,6vw,64px);
+    border-bottom:1px solid #D4DAD0;
+  }
+  .reframe p{
+    font-family:"Fraunces",serif;font-weight:500;font-style:italic;
+    font-size:clamp(1.15rem,3vw,1.5rem);line-height:1.35;color:var(--pine);max-width:30ch;
+  }
+
+  /* ---------- generic section ---------- */
+  section.block{padding:clamp(40px,7vw,60px) clamp(24px,6vw,64px);border-bottom:1px solid #DCE1D7}
+  .block h2{
+    font-family:"Inter",sans-serif;font-size:.72rem;letter-spacing:.22em;
+    text-transform:uppercase;font-weight:600;color:var(--sage);margin-bottom:26px;
+  }
+
+  /* ---------- strategy callout ---------- */
+  .strategy{background:#fff}
+  .strategy .lede{
+    font-family:"Fraunces",serif;font-weight:500;font-size:clamp(1.3rem,3.4vw,1.7rem);
+    color:var(--pine);line-height:1.25;max-width:24ch;margin-bottom:20px;
+  }
+  .strategy p{color:var(--ink-soft);font-size:1rem;max-width:58ch;margin-bottom:14px}
+  .strategy p strong{color:var(--ink);font-weight:600}
+  .order{
+    display:grid;gap:10px;margin:22px 0 6px;counter-reset:step;
+  }
+  .order li{
+    list-style:none;display:flex;gap:14px;align-items:baseline;
+    font-size:1.02rem;color:var(--ink);
+  }
+  .order li::before{
+    counter-increment:step;content:counter(step);
+    flex:0 0 26px;height:26px;border-radius:50%;
+    background:var(--pine);color:var(--paper);
+    font-size:.8rem;font-weight:600;font-family:"Inter";
+    display:grid;place-items:center;
+  }
+  .metaphor{
+    margin-top:22px;padding:18px 22px;border-left:3px solid var(--honey);
+    background:var(--paper-2);color:var(--ink);font-size:1.02rem;border-radius:0 6px 6px 0;
+  }
+  .metaphor b{color:var(--pine)}
+
+  /* ---------- live copy ---------- */
+  .live .asset{
+    border:1px solid #D2D8CE;border-radius:10px;padding:20px 22px;background:#fff;margin-bottom:16px;
+  }
+  .live .tag{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sage);font-weight:600}
+  .live .headline{font-family:"Fraunces",serif;font-weight:500;font-size:1.4rem;color:var(--ink);margin-top:8px;line-height:1.2}
+  .live .headline em{font-style:italic;color:var(--honey)}
+  .live .sub{color:var(--ink-soft);margin-top:8px;font-size:.98rem}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .chip{font-size:.82rem;font-weight:500;color:var(--pine);background:var(--paper-2);border:1px solid #D2D8CE;padding:5px 12px;border-radius:20px}
+  .live .line{font-family:"Fraunces",serif;font-style:italic;font-size:1.1rem;color:var(--pine);margin-top:8px}
+
+  /* ---------- golden circle ---------- */
+  .circle-row{display:flex;gap:clamp(16px,3vw,28px);padding:22px 0;border-top:1px solid #DCE1D7}
+  .circle-row:first-of-type{border-top:none;padding-top:0}
+  .circle-label{
+    font-family:"Fraunces",serif;font-weight:500;font-size:1.35rem;color:var(--pine);
+    flex:0 0 92px;line-height:1.2;
+  }
+  .circle-label span{display:block;font-family:"Inter";font-size:.62rem;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--honey);font-weight:600;margin-top:4px}
+  .circle-body{flex:1;color:var(--ink-soft);font-size:1rem;max-width:52ch}
+  .circle-body strong{color:var(--ink);font-weight:600}
+
+  /* ---------- serve ---------- */
+  .serve p{font-size:1.08rem;max-width:54ch;color:var(--ink-soft)}
+  .serve .pull{
+    font-family:"Fraunces",serif;font-style:italic;font-weight:500;
+    color:var(--pine);font-size:1.25rem;margin-top:18px;line-height:1.4;max-width:34ch;
+  }
+
+  /* ---------- principles ---------- */
+  .principles{list-style:none;display:grid;gap:14px}
+  .principles li{display:flex;gap:14px;align-items:flex-start;font-size:1rem;color:var(--ink)}
+  .principles li::before{
+    content:"";flex:0 0 9px;height:9px;margin-top:9px;border-radius:50%;
+    background:var(--honey);box-shadow:0 0 0 3px rgba(217,138,54,.18);
+  }
+  .audit{
+    margin-top:26px;padding:18px 22px;border-left:3px solid var(--honey);
+    background:var(--paper-2);color:var(--ink-soft);font-size:.97rem;border-radius:0 6px 6px 0;
+  }
+
+  /* ---------- brand tokens ---------- */
+  .tokens{display:flex;flex-wrap:wrap;gap:10px}
+  .token{display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--ink-soft)}
+  .sw{width:22px;height:22px;border-radius:5px;border:1px solid rgba(0,0,0,.1)}
+
+  /* ---------- footer / discovery ---------- */
+  footer{background:var(--pine-deep);color:var(--paper);padding:clamp(40px,7vw,56px) clamp(24px,6vw,64px)}
+  footer h2{color:var(--honey-soft)}
+  .engine-tag{display:inline-block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--pine-deep);background:var(--honey-soft);padding:5px 11px;border-radius:20px;margin-bottom:18px}
+  .qs{list-style:none;display:grid;gap:12px;margin-bottom:24px}
+  .qs li{font-family:"Fraunces",serif;font-size:1.08rem;color:var(--paper);padding-left:24px;position:relative}
+  .qs li::before{content:"?";position:absolute;left:0;color:var(--honey-soft);font-family:"Inter";font-weight:600}
+  .closing{border-top:1px solid rgba(255,255,255,.16);padding-top:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-end}
+  .closing .note{font-family:"Fraunces",serif;font-style:italic;font-size:1.1rem;color:#CBD8D1;max-width:32ch}
+  .contact{font-size:.85rem;color:#9FB3AB;line-height:1.8}
+  .contact b{color:var(--paper);font-weight:600}
+  .contact a{color:#9FB3AB;text-decoration:none}
+
+  @media (max-width:560px){
+    .circle-row{flex-direction:column;gap:8px}
+    .circle-label{flex-basis:auto}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .r1,.r2,.r3,.r4{animation:none;opacity:.32}
+  }
+  @media print{
+    .hero,footer{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .r1,.r2,.r3,.r4{animation:none}
+    section.block{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="hero">
+    <svg class="ripple" viewBox="0 0 200 200" aria-hidden="true">
+      <circle class="r1" cx="100" cy="100" r="30"/>
+      <circle class="r2" cx="100" cy="100" r="55"/>
+      <circle class="r3" cx="100" cy="100" r="80"/>
+      <circle class="r4" cx="100" cy="100" r="105"/>
+      <circle cx="100" cy="100" r="6" fill="var(--honey)" stroke="none"/>
+    </svg>
+    <div class="hero-head">
+      <span class="eyebrow">Brand Brief · v2 · internal</span>
+      <span class="name">Omar Bougma · Web Developer, Marrakesh</span>
+    </div>
+    <h1 class="why">I grow the businesses that make life better — so their good <em>reaches further</em>.</h1>
+    <p class="why-sub">Helping people is the single thing that gives me the most joy. I can't reach everyone myself — so I build the tools that let honest businesses reach the people who need them.</p>
+    <span class="why-tag">This is the compass — not the homepage</span>
+  </header>
+
+  <div class="reframe">
+    <p>"You already change lives. I remove what stands between you and the people who need you."</p>
+  </div>
+
+  <section class="block strategy">
+    <h2>The strategy — read this first</h2>
+    <p class="lede">The why is a compass, not a headline.</p>
+    <p>Sinek built "start with why" by studying Apple, Martin Luther King, the Wright Brothers — movements and giant brands with the airtime to lead with belief. A one-person shop with no track record yet <strong>doesn't have that airtime</strong>. Lead a homepage with a poetic belief statement and a busy café or clinic owner hears: "nice words, but can you build the thing, how much, and have you done it before?"</p>
+    <p>So the why gets <strong>demoted, not deleted</strong>. It lives in three quiet places: in my own head (so I stay motivated and know who to say no to), in how I talk on a call, and as one honest line late on the page. A brief is internal — that's the right place for the why to be loud. A homepage is not.</p>
+    <p>What actually converts for local B2B services is the boring stuff, in this order:</p>
+    <ol class="order">
+      <li>A crisp statement of <strong>what I do and for whom</strong></li>
+      <li><strong>Proof</strong> — experience and work</li>
+      <li><strong>Trust signals</strong> — fixed quotes, plain language, you own it</li>
+      <li><strong>How to reach me</strong></li>
+    </ol>
+    <div class="metaphor"><b>Sinek is the steering wheel. Voss is the engine.</b> The discovery questions, naming the client's fears out loud, and framing value as "how many bookings are you losing" — that's the part that actually moves people from "maybe" to "yes." The belief lands harder as a closing note than as an opening claim.</div>
+  </section>
+
+  <section class="block live">
+    <h2>Public-facing copy — live on the site</h2>
+    <div class="asset">
+      <span class="tag">Hero — plain, confident</span>
+      <div class="headline">I build websites and tools that get small businesses more customers and <em>less busywork</em>.</div>
+      <p class="sub">Nearly four years' experience building and running real software — now helping honest local businesses get results without the jargon. Based in Marrakesh.</p>
+    </div>
+    <div class="asset">
+      <span class="tag">Trust strip</span>
+      <div class="chips">
+        <span class="chip">Fixed quotes, no surprises</span>
+        <span class="chip">Plain language, no jargon</span>
+        <span class="chip">You own everything I build</span>
+      </div>
+    </div>
+    <div class="asset">
+      <span class="tag">The why — as a closing note, after the read is earned</span>
+      <p class="sub">Helping people is the thing I care about most — and I can't reach everyone myself. So I build the tools that let honest local businesses reach the people who need them, and spend less of their day fighting their own systems. More customers, less wasted time, more good done. That's the whole reason I do this work. <em>— Omar</em></p>
+    </div>
+    <div class="asset">
+      <span class="tag">The filter line (for calls + saying no)</span>
+      <div class="line">"I only work with businesses I believe in."</div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>The compass — Golden Circle (internal)</h2>
+    <div class="circle-row">
+      <div class="circle-label">Why<span>Belief</span></div>
+      <div class="circle-body">To help honest businesses do more good, so more people get the help they were built to give. <strong>It pains me to watch people struggle when help already exists.</strong></div>
+    </div>
+    <div class="circle-row">
+      <div class="circle-label">How<span>Approach</span></div>
+      <div class="circle-body">I start with the people you serve, not the tech. I work in whatever medium the problem needs — websites, systems, DevOps, connected devices, custom software — and I build things <strong>you can still run after I'm gone</strong>.</div>
+    </div>
+    <div class="circle-row">
+      <div class="circle-label">What<span>Offer</span></div>
+      <div class="circle-body">Digital tools chosen to grow your <strong>impact</strong>, not just your revenue: sites, internal systems, automation, devices, and bespoke programs.</div>
+    </div>
+  </section>
+
+  <section class="block serve">
+    <h2>Who I serve</h2>
+    <p>Businesses I believe in — ones that honestly deliver what they promise and truly help the people they serve. I'm starting with those in real need of a digital lift, found one good business at a time.</p>
+    <p class="pull">"I'd rather grow ten businesses that matter than a hundred that don't."</p>
+  </section>
+
+  <section class="block">
+    <h2>How I work</h2>
+    <ul class="principles">
+      <li>It's not about me. I lead with your world, not my skill list.</li>
+      <li>You own everything — no lock-in, no jargon, plain language as I go.</li>
+      <li>I'm measured on your outcome, not on my cleverness.</li>
+      <li>Honest work, for honest businesses, only.</li>
+    </ul>
+    <p class="audit">You may have hired a developer who vanished halfway, overcharged, or left you with something only they could touch. That's exactly why I work this way — named out loud, so it can't surprise either of us.</p>
+  </section>
+
+  <section class="block">
+    <h2>Experience &amp; proof</h2>
+    <p style="color:var(--ink-soft);max-width:56ch">Nearly four years (3 yrs 8 mo) at a startup, across three disciplines at once: <strong style="color:var(--ink)">full-stack development, DevOps, and security</strong> — building the product, running the infrastructure it shipped on, and keeping it secure. Owned problems from first idea to production.</p>
+    <p class="audit" style="border-color:var(--sage)"><b style="color:var(--pine)">Proof gap (to close):</b> the page describes how I work but shows no shipped artifact yet. As soon as a project lands with a real outcome, add it here as the lead proof point — a concrete result beats any belief statement.</p>
+  </section>
+
+  <section class="block">
+    <h2>Brand system</h2>
+    <div class="tokens">
+      <span class="token"><span class="sw" style="background:#173A33"></span>Pine #173A33</span>
+      <span class="token"><span class="sw" style="background:#0E2A24"></span>Pine deep #0E2A24</span>
+      <span class="token"><span class="sw" style="background:#D98A36"></span>Honey #D98A36</span>
+      <span class="token"><span class="sw" style="background:#E9B567"></span>Honey soft #E9B567</span>
+      <span class="token"><span class="sw" style="background:#5E7A6E"></span>Sage #5E7A6E</span>
+      <span class="token"><span class="sw" style="background:#EEF0EA"></span>Paper #EEF0EA</span>
+      <span class="token"><span class="sw" style="background:#1A241F"></span>Ink #1A241F</span>
+    </div>
+    <p style="color:var(--ink-soft);margin-top:16px;font-size:.95rem">Type: <strong style="color:var(--ink)">Fraunces</strong> (serif / headings), <strong style="color:var(--ink)">Inter</strong> (body), <strong style="color:var(--ink)">Cairo</strong> (Arabic). Site speaks EN / FR / AR, with full right-to-left support for Arabic.</p>
+  </section>
+
+  <footer>
+    <span class="engine-tag">The engine — Voss</span>
+    <h2>Discovery call — quick reference</h2>
+    <ul class="qs">
+      <li>What made you reach out now?</li>
+      <li>What's the hardest part of running this, day to day?</li>
+      <li>What would have to change for this to feel worth it to you?</li>
+      <li><em>Label:</em> "It sounds like the real problem isn't the website — it's that people can't find you."</li>
+      <li><em>Value frame:</em> "Roughly how many bookings do you think you lose each month to this?"</li>
+    </ul>
+    <p style="color:#9FB3AB;font-size:.92rem;margin-bottom:30px;max-width:52ch">Keep summarizing their world back until they say <strong style="color:var(--honey-soft);font-weight:600">"that's right."</strong> Let "no" stay safe. Listen for the one detail that reshapes everything.</p>
+    <div class="closing">
+      <p class="note">Lead with the why on calls. Lead with clarity on the page.</p>
+      <div class="contact">
+        <b>Omar Bougma</b><br>
+        <a href="mailto:bougmaomar2022@gmail.com">bougmaomar2022@gmail.com</a> · <a href="https://wa.me/212629071889">0629071889 (WhatsApp)</a><br>
+        Marrakesh, Morocco
+      </div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

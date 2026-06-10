@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "about": "Pourquoi",
+    "work": "Expérience",
+    "services": "Services",
+    "process": "Méthode",
+    "cta": "Discutons"
+  },
+  "hero": {
+    "eyebrow": "Développeur web · Marrakech",
+    "heading": "Je crée des sites et des outils qui apportent plus de clients aux petites entreprises et",
+    "headingEm": "moins de tâches ingrates",
+    "sub": "Près de quatre ans d'expérience à construire et faire tourner de vrais logiciels — aujourd'hui au service des entreprises locales honnêtes, sans jargon. Basé à Marrakech.",
+    "cta1": "Voir mon expérience",
+    "cta2": "Démarrer une conversation"
+  },
+  "reframe": {
+    "point1": "Devis fixes, sans surprise",
+    "point2": "Un langage clair, sans jargon",
+    "point3": "Vous possédez tout ce que je construis"
+  },
+  "about": {
+    "eyebrow": "Pourquoi je le fais",
+    "heading": "La raison honnête derrière tout ça.",
+    "body": "Aider les autres est ce qui compte le plus pour moi — et je ne peux pas atteindre tout le monde seul. Alors je construis les outils qui permettent aux entreprises locales honnêtes d'atteindre les personnes qui ont besoin d'elles, et de passer moins de temps à se battre avec leurs propres systèmes. Plus de clients, moins de temps perdu, plus de bien fait. C'est toute la raison de mon travail.",
+    "signature": "— Omar"
+  },
+  "work": {
+    "eyebrow": "Expérience",
+    "title": "Près de quatre ans à construire et faire tourner de vrais systèmes.",
+    "duration": "3,8 ans",
+    "role": "Développement · DevOps · Sécurité",
+    "intro": "J'ai passé près de quatre ans dans une startup en portant trois casquettes à la fois — écrire le logiciel, gérer l'infrastructure sur laquelle il tournait, et le garder sécurisé. J'ai pris les problèmes en charge de la première idée jusqu'à la production, et appris comment les systèmes survivent vraiment au contact des utilisateurs réels.",
+    "highlights": [
+      {
+        "label": "Construire le produit",
+        "desc": "Développement full-stack de bout en bout — frontend, backend, et les données entre les deux, conçus comme un tout connecté."
+      },
+      {
+        "label": "Gérer l'infrastructure",
+        "desc": "DevOps du déploiement au monitoring — mettre les fonctionnalités en production de façon fiable et les maintenir tandis que les gens en dépendaient chaque jour."
+      },
+      {
+        "label": "Assurer la sécurité",
+        "desc": "La sécurité traitée comme partie intégrante de la construction, pas un ajout — durcir ce qu'on livrait face aux risques réels."
+      }
+    ],
+    "skillsLabel": "Mes domaines",
+    "skills": ["Développement full-stack", "DevOps & déploiement", "Sécurité", "Automatisation", "Infrastructure", "Maintenance"],
+    "note": "Aujourd'hui, je prends ce que j'ai appris en développement, en opérations et en sécurité au sein d'une entreprise, et je l'offre directement aux entreprises honnêtes qui en ont le plus besoin."
+  },
+  "services": {
+    "eyebrow": "Ce que je construis",
+    "heading1": "Le bon médium",
+    "heading2": "pour le vrai problème.",
+    "sub": "Je ne commence pas avec une pile technologique. Je pars de ce que vous voulez accomplir et je choisis ce qui a le plus de sens — souvent plus simple que vous ne le pensez.",
+    "items": [
+      { "title": "Sites & Applications Web", "desc": "Des pages d'atterrissage aux plateformes complètes — conçus pour convertir, durer, et vous appartenir après mon départ." },
+      { "title": "Systèmes Internes", "desc": "Tableaux de bord, outils et workflows que votre équipe utilisera vraiment — conçus autour de votre façon de penser." },
+      { "title": "Automatisation", "desc": "Supprimez les tâches répétitives. Libérez vos équipes pour le travail qui nécessite vraiment un humain." },
+      { "title": "Appareils Connectés", "desc": "Solutions IoT qui relient vos opérations numériques et le monde physique — pratiques, pas juste intelligentes." },
+      { "title": "Logiciels Sur Mesure", "desc": "Ce que le problème nécessite. Construit pour vous, documenté, et remis — jamais retenu en otage." }
+    ]
+  },
+  "process": {
+    "eyebrow": "Comment je travaille",
+    "heading1": "Des engagements simples.",
+    "heading2": "Tenus à chaque fois.",
+    "principles": [
+      "Ce n'est pas à propos de moi. Je pars de votre monde, pas de ma liste de compétences.",
+      "Vous possédez tout — aucun verrouillage, aucun jargon, un langage clair tout au long.",
+      "Je suis mesuré sur vos résultats, pas sur mon ingéniosité.",
+      "Travail honnête, pour des entreprises honnêtes, uniquement.",
+      "Je construis des choses que vous pouvez encore gérer après mon départ."
+    ],
+    "audit": "Vous avez peut-être déjà embauché un développeur qui a disparu à mi-chemin, surfacturé, ou vous a laissé avec quelque chose que seul lui pouvait modifier. <strong>C'est exactement pourquoi je travaille ainsi — dit clairement, pour que cela ne surprenne aucun de nous.</strong>"
+  },
+  "contact": {
+    "eyebrow": "Parlons",
+    "heading1": "Prêt à développer",
+    "heading2": "votre impact ?",
+    "sub": "Je commence chaque conversation de la même façon — en comprenant votre monde avant de parler du mien.",
+    "cta": "Démarrer la conversation",
+    "orEmail": "Ou écrivez-moi directement à",
+    "orWhatsapp": "Ou contactez-moi sur WhatsApp au",
+    "whatsappAria": "Discuter avec moi sur WhatsApp",
+    "whatsappLabel": "Écrivez-moi",
+    "discoveryLabel": "À notre premier appel, je demanderai :",
+    "questions": [
+      "Qu'est-ce qui vous a amené à nous contacter maintenant ?",
+      "Quelle est la partie la plus difficile de gérer cela au quotidien ?",
+      "Que faudrait-il changer pour que cela en vaille la peine pour vous ?"
+    ],
+    "tip": "Je continuerai à résumer votre monde jusqu'à ce que vous disiez <strong>« c'est ça »</strong>. Laissez « non » rester sans risque — c'est tout le principe.",
+    "closingNote": "« Commencez par le pourquoi. Le quoi s'en occupera. »",
+    "location": "Marrakech, Maroc"
+  }
+}

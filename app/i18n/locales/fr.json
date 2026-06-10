@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "about": "À propos",
+    "work": "Travaux",
+    "services": "Services",
+    "process": "Méthode",
+    "cta": "Discutons"
+  },
+  "hero": {
+    "eyebrow": "Disponible pour projets · Marrakech",
+    "heading": "Je développe les entreprises qui améliorent la vie — pour que leur bien",
+    "headingEm": "porte plus loin",
+    "sub": "Aider les autres est ce qui me donne le plus de joie. Je ne peux pas atteindre tout le monde moi-même — alors je construis les outils qui permettent aux entreprises honnêtes d'atteindre ceux qui ont besoin d'elles.",
+    "cta1": "Voir mes projets",
+    "cta2": "Démarrer une conversation"
+  },
+  "reframe": {
+    "line1": "« Vous changez déjà des vies.",
+    "line2": "Je supprime ce qui vous sépare",
+    "line3": "des personnes qui ont besoin de vous. »"
+  },
+  "about": {
+    "eyebrow": "Le Cercle d'Or",
+    "circles": [
+      {
+        "label": "Pourquoi",
+        "category": "Croyance",
+        "body": "Aider les entreprises honnêtes à faire plus de bien, pour que plus de personnes reçoivent l'aide qu'elles méritent. <strong>Il me pèse de voir des gens souffrir quand l'aide existe déjà.</strong>"
+      },
+      {
+        "label": "Comment",
+        "category": "Approche",
+        "body": "Je commence par les personnes que vous servez, pas par la technologie. Je travaille dans le médium qu'exige le problème — sites, systèmes, automatisation, appareils connectés, logiciels sur mesure — et je construis des choses <strong>que vous pouvez encore gérer après mon départ</strong>."
+      },
+      {
+        "label": "Quoi",
+        "category": "Offre",
+        "body": "Des outils numériques choisis pour développer votre <strong>impact</strong>, pas seulement vos revenus : sites, systèmes internes, automatisation, appareils et programmes sur mesure."
+      }
+    ]
+  },
+  "work": {
+    "eyebrow": "Travaux sélectionnés",
+    "title": "Des entreprises que j'ai aidé à grandir.",
+    "caseStudy": "Étude de cas",
+    "projects": [
+      {
+        "category": "Hôtellerie",
+        "description": "Refonte de leur présence en ligne avec un moteur de réservation direct — supprimant la dépendance aux OTA et laissant leur histoire authentique parler d'elle-même.",
+        "impact": "+40% de réservations directes en 90 jours"
+      },
+      {
+        "category": "Agriculture",
+        "description": "Plateforme de commandes B2B et tableau de bord logistique pour une coopérative d'herbes biologiques, les connectant aux restaurants et magasins santé du Maroc.",
+        "impact": "3× la portée en gros"
+      },
+      {
+        "category": "Éducation",
+        "description": "Plateforme de mise en relation de bénévoles et suivi des progrès des élèves pour une coopérative de tutorat au service des étudiants défavorisés de Casablanca.",
+        "impact": "60% moins de charge administrative"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Ce que je construis",
+    "heading1": "Le bon médium",
+    "heading2": "pour le vrai problème.",
+    "sub": "Je ne commence pas avec une pile technologique. Je pars de ce que vous voulez accomplir et je choisis ce qui a le plus de sens — souvent plus simple que vous ne le pensez.",
+    "items": [
+      { "title": "Sites & Applications Web", "desc": "Des pages d'atterrissage aux plateformes complètes — conçus pour convertir, durer, et vous appartenir après mon départ." },
+      { "title": "Systèmes Internes", "desc": "Tableaux de bord, outils et workflows que votre équipe utilisera vraiment — conçus autour de votre façon de penser." },
+      { "title": "Automatisation", "desc": "Supprimez les tâches répétitives. Libérez vos équipes pour le travail qui nécessite vraiment un humain." },
+      { "title": "Appareils Connectés", "desc": "Solutions IoT qui relient vos opérations numériques et le monde physique — pratiques, pas juste intelligentes." },
+      { "title": "Logiciels Sur Mesure", "desc": "Ce que le problème nécessite. Construit pour vous, documenté, et remis — jamais retenu en otage." }
+    ]
+  },
+  "process": {
+    "eyebrow": "Comment je travaille",
+    "heading1": "Des engagements simples.",
+    "heading2": "Tenus à chaque fois.",
+    "principles": [
+      "Ce n'est pas à propos de moi. Je pars de votre monde, pas de ma liste de compétences.",
+      "Vous possédez tout — aucun verrouillage, aucun jargon, un langage clair tout au long.",
+      "Je suis mesuré sur vos résultats, pas sur mon ingéniosité.",
+      "Travail honnête, pour des entreprises honnêtes, uniquement.",
+      "Je construis des choses que vous pouvez encore gérer après mon départ."
+    ],
+    "audit": "Vous avez peut-être déjà embauché un développeur qui a disparu à mi-chemin, surfacturé, ou vous a laissé avec quelque chose que seul lui pouvait modifier. <strong>C'est exactement pourquoi je travaille ainsi — dit clairement, pour que cela ne surprenne aucun de nous.</strong>"
+  },
+  "contact": {
+    "eyebrow": "Parlons",
+    "heading1": "Prêt à développer",
+    "heading2": "votre impact ?",
+    "sub": "Je commence chaque conversation de la même façon — en comprenant votre monde avant de parler du mien.",
+    "cta": "Démarrer la conversation",
+    "discoveryLabel": "À notre premier appel, je demanderai :",
+    "questions": [
+      "Qu'est-ce qui vous a amené à nous contacter maintenant ?",
+      "Quelle est la partie la plus difficile de gérer cela au quotidien ?",
+      "Que faudrait-il changer pour que cela en vaille la peine pour vous ?"
+    ],
+    "tip": "Je continuerai à résumer votre monde jusqu'à ce que vous disiez <strong>« c'est ça »</strong>. Laissez « non » rester sans risque — c'est tout le principe.",
+    "closingNote": "« Commencez par le pourquoi. Le quoi s'en occupera. »",
+    "location": "Marrakech, Maroc"
+  }
+}
