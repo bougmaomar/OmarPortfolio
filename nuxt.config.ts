@@ -29,10 +29,10 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {},
-      title: 'Omar Bougma — Web Developer, Marrakesh',
+      title: 'Omar Bougma — Software Developer, Marrakesh',
       meta: [
         { name: 'description', content: 'I build websites and tools that help small businesses get more customers and waste less time on admin. Nearly four years\' experience, based in Marrakesh. Fixed quotes, plain language.' },
-        { property: 'og:title', content: 'Omar Bougma — Web Developer, Marrakesh' },
+        { property: 'og:title', content: 'Omar Bougma — Software Developer, Marrakesh' },
         { property: 'og:description', content: 'Websites and tools that get small businesses more customers and less busywork. Based in Marrakesh.' },
         { name: 'theme-color', content: '#173A33' }
       ],
