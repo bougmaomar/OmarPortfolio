@@ -1,6 +1,16 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  // Static generation for Cloudflare Pages: prerender every locale route to
+  // plain HTML. No server runtime needed — output lands in .output/public.
+  nitro: {
+    preset: 'static',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/fr/', '/ar/'],
+      failOnError: false,
+    },
+  },
   modules: ['@nuxtjs/i18n'],
   i18n: {
     defaultLocale: 'en',
