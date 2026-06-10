@@ -11,9 +11,11 @@ Cloudflare Pages serves.
 | Framework preset         | None (or Nuxt)     |
 | Build command            | `npm run generate` |
 | Build output directory   | `.output/public`   |
-| Node version             | `20` (from `.nvmrc`) |
+| Node version             | `24` (from `.nvmrc`) |
 
-If Cloudflare ignores `.nvmrc`, add an environment variable `NODE_VERSION = 20`.
+If Cloudflare ignores `.nvmrc`, add an environment variable `NODE_VERSION = 24`.
+Node 24 bundles npm 11, which matches the committed `package-lock.json`; older Node
+(npm 10) fails `npm ci` on the platform-specific `@emnapi/*` native deps.
 
 ---
 
