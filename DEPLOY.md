@@ -58,6 +58,16 @@ npm run generate
 npx serve .output/public
 ```
 
+## ⚠️ Lockfile / npm version
+Cloudflare's builder runs **npm 10** (even on Node 24). If your local npm is 11+,
+`npm install` rewrites `package-lock.json` in a way npm 10's `npm ci` rejects
+(`Missing @emnapi/core … from lock file`). After changing any dependency, resync
+the lock with npm 10 before committing:
+
+```bash
+npx -y npm@10.9.2 install --package-lock-only
+```
+
 ## Notes
 - `public/_headers` sets long-cache for `/_nuxt/*` assets and basic security headers.
 - `BRIEF.html` lives at the project root, **outside** `public/`, so it is never
