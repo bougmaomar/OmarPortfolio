@@ -1,20 +1,22 @@
 {
   "seo": {
-    "title": "Software Developer in Marrakesh — Omar Bougma",
-    "description": "I build websites, internal tools, and automation for small businesses in Marrakesh — fixed quotes, plain language, and software you fully own. Nearly four years across development, DevOps, and security."
+    "title": "Software Developer — Websites & Apps across Morocco | Omar Bougma",
+    "description": "I build websites, internal tools, and automation for small businesses across Morocco — based in Marrakesh. Fixed quotes, plain language, and software you fully own."
   },
   "nav": {
     "about": "Why",
     "work": "Experience",
+    "projects": "Projects",
     "services": "Services",
     "process": "Process",
+    "faq": "FAQ",
     "cta": "Let's talk"
   },
   "hero": {
     "eyebrow": "Software developer · Marrakesh",
     "heading": "I build websites and tools that get small businesses more customers and",
     "headingEm": "less busywork",
-    "sub": "Nearly four years' experience building and running real software — now helping honest local businesses get results without the jargon. Based in Marrakesh.",
+    "sub": "Experience building and running real software since 2022 — now helping small businesses across Morocco get results without the jargon. Based in Marrakesh.",
     "cta1": "See my experience",
     "cta2": "Start a conversation"
   },
@@ -25,33 +27,38 @@
   },
   "about": {
     "eyebrow": "Why I care",
-    "heading": "The honest reason I do this.",
-    "body": "Helping people is the thing I care about most — and I can't reach everyone myself. So I build the tools that let honest local businesses reach the people who need them, and spend less of their day fighting their own systems. More customers, less wasted time, more good done. That's the whole reason I do this work.",
-    "signature": "— Omar"
+    "heading": "The real reason I do this.",
+    "body": "I want a shop owner to spend their evenings with family instead of fighting spreadsheets. Most small businesses already do good work — they just lose hours to clunky tools and lose customers who can't find them. I build the websites and tools that take that friction away, so you get more of the right customers and more of your time back. That's the whole reason I do this.",
+    "signature": "— Omar",
+    "photoAlt": "Omar Bougma",
+    "photoPlaceholder": "Your photo here"
   },
   "work": {
     "eyebrow": "Experience",
-    "title": "Nearly four years building and running real systems.",
-    "duration": "3.8 years",
+    "title": "Building and running real systems.",
+    "duration": "Since 2022",
     "role": "Development · DevOps · Security",
-    "intro": "I spent close to four years at a startup wearing three hats at once — writing the software, running the infrastructure it shipped on, and keeping it secure. I owned problems from the first idea to production, and learned how systems actually survive contact with real users.",
+    "intro": "Since 2022 I've worked across three disciplines at once — writing the software, running the infrastructure it ships on, and keeping it secure. I own problems from the first idea to production, and have learned how systems actually survive contact with real users.",
     "highlights": [
       {
         "label": "Built the product",
-        "desc": "Full-stack development end to end — frontend, backend, and the data in between, designed as one connected whole."
+        "desc": "Full-stack development end to end — frontend, backend, and the data in between, designed as one connected whole.",
+        "metric": "Metric pending — e.g. shipped [N] features across [N] production apps."
       },
       {
         "label": "Ran the infrastructure",
-        "desc": "DevOps from deployment to monitoring — shipping features into production reliably and keeping them running as people relied on them every day."
+        "desc": "DevOps from deployment to monitoring — shipping features into production reliably and keeping them running as people relied on them every day.",
+        "metric": "Metric pending — e.g. [N]% uptime · [N] deploys per week."
       },
       {
         "label": "Kept it secure",
-        "desc": "Treated security as part of the build, not an afterthought — hardening what we shipped against real-world risk."
+        "desc": "Treated security as part of the build, not an afterthought — hardening what we shipped against real-world risk.",
+        "metric": "Metric pending — e.g. [N] vulnerabilities resolved · zero breaches."
       }
     ],
     "skillsLabel": "What I worked across",
     "skills": ["Full-stack development", "DevOps & deployment", "Security", "Automation", "Infrastructure", "Maintenance"],
-    "note": "Now I'm taking what I learned across development, operations, and security inside one company and offering it directly to the honest businesses that need it most."
+    "note": "Now I'm taking what I learned across development, operations, and security and offering it directly to the small businesses that need it most."
   },
   "services": {
     "eyebrow": "What I build",
@@ -62,8 +69,14 @@
       { "title": "Websites & Web Apps", "desc": "From landing pages to full platforms — built to convert, to last, and to be yours after I leave." },
       { "title": "Internal Systems", "desc": "Dashboards, tools, and workflows your team will actually use — designed around how you already think." },
       { "title": "Automation", "desc": "Remove the repetitive. Free your people for the work that actually needs a human behind it." },
-      { "title": "Connected Devices", "desc": "IoT solutions that bridge your digital operations and physical world — practical, not just clever." },
-      { "title": "Bespoke Software", "desc": "Whatever the problem needs. Purpose-built, documented, and handed over — not held hostage." }
+      { "title": "Hosting, Maintenance & Security", "desc": "I keep it running — hosting, updates, backups, and security, every month. No vanishing after launch." }
+    ],
+    "tiersLabel": "Monthly care plans",
+    "tiersNote": "Plan names and prices are placeholders — final pricing to be set.",
+    "tiers": [
+      { "name": "Basic", "desc": "Hosting, updates & backups", "price": "[price] / mo" },
+      { "name": "Standard", "desc": "Everything in Basic, plus monitoring & priority fixes", "price": "[price] / mo" },
+      { "name": "Premium", "desc": "Everything in Standard, plus security hardening & a monthly report", "price": "[price] / mo" }
     ]
   },
   "process": {
@@ -98,5 +111,67 @@
     "tip": "I'll keep summarizing your world back until you say <strong>\"that's right.\"</strong> Let \"no\" stay safe — that's the whole point.",
     "closingNote": "\"Lead with the why. The what will take care of itself.\"",
     "location": "Marrakesh, Morocco"
+  },
+  "projects": {
+    "eyebrow": "Selected work",
+    "title": "Things I've built.",
+    "intro": "A few projects — the problem, what I built, and where each one stands today.",
+    "imagePlaceholder": "Screenshot coming soon",
+    "maintenanceLink": "→ Keep it running after launch",
+    "visit": "Visit the site →",
+    "items": [
+      {
+        "name": "BlueSky — accounting & budgeting SaaS",
+        "tag": "Financial SaaS · built at a previous employer",
+        "problem": "Companies need one place to handle financial operations, budgeting, and strategic planning — with a forward view of their financial health.",
+        "built": "BlueSky — an all-in-one financial accounting and budget-planning SaaS, covering revenues, expenses, assets, liabilities, and more, from day-to-day tracking to high-level projections.",
+        "tech": "A full-stack SaaS with AI-driven analytics that turn historical data into predictions of financial health.",
+        "outcome": "Built and used in production at a previous employer.",
+        "note": ""
+      },
+      {
+        "name": "MeinLedger — personal finance tracker",
+        "tag": "Solo project · completed",
+        "problem": "People want a clear, simple way to track personal finances without a bloated app.",
+        "built": "Designed, built, and ran a personal finance tracker — net worth, cash flow, spending by category, accounts, goals, and subscriptions.",
+        "tech": "A full-stack web app, from database to interface, deployed and maintained end to end — entirely solo.",
+        "outcome": "A completed product I designed, shipped, and operated myself.",
+        "note": ""
+      },
+      {
+        "name": "Fintbib — medical practice platform",
+        "tag": "Medical practices · in development",
+        "problem": "Medical practices needed one place to run the patient side of the clinic — not just records, but visits, appointments, and documents too.",
+        "built": "A practice-management platform — patient profiles and history, visits and diagnoses, appointments, document management, and insurance, all in one place.",
+        "tech": "A full-stack web app built privacy- and compliance-first, for medical establishments.",
+        "outcome": "In development, pending regulatory approval before handling real patient data.",
+        "note": "Shown with fictional sample data only."
+      },
+      {
+        "name": "Abdellah Bougma — artisan portfolio",
+        "tag": "Client project",
+        "problem": "A Moroccan artisan needed an elegant online home for his craft and gallery.",
+        "built": "A portfolio site — his story, his process, and a gallery of his work — designed around his taste.",
+        "tech": "A custom site, designed and built to match his style.",
+        "outcome": "Delivered for a real client.",
+        "note": ""
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "What clients say.",
+    "comingSoon": "Client quotes will land here soon — the first ones are on the way."
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions you might have.",
+    "items": [
+      { "q": "How much does a website cost?", "a": "You get a fixed quote up front — no surprises. Most small-business sites fall in a clear range. [Draft: exact price ranges to be added.]" },
+      { "q": "How long does it take?", "a": "Usually a few weeks, depending on scope. I give you a timeline before we start. [Draft: typical ranges to be added.]" },
+      { "q": "What do I need to prepare?", "a": "Very little — your content and a rough sense of what you want. I'll guide the rest in plain language." },
+      { "q": "Do I really own everything?", "a": "Yes. Every site, tool, and account is yours — code and content included. No lock-in, ever." },
+      { "q": "What happens after launch?", "a": "I can keep it running — hosting, updates, backups, and security — through a monthly care plan. See Services above." }
+    ]
   }
 }

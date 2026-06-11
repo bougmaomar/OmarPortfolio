@@ -6,15 +6,22 @@ const icons = [
   `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>`,
   `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>`,
   `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
-  `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="currentColor"/></svg>`,
-  `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
+  `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>`,
 ]
 
 const items = computed(() =>
-  [0, 1, 2, 3, 4].map(i => ({
+  [0, 1, 2, 3].map(i => ({
     title: t(`services.items[${i}].title`),
     desc: t(`services.items[${i}].desc`),
     icon: icons[i],
+  }))
+)
+
+const tiers = computed(() =>
+  [0, 1, 2].map(i => ({
+    name: t(`services.tiers[${i}].name`),
+    desc: t(`services.tiers[${i}].desc`),
+    price: t(`services.tiers[${i}].price`),
   }))
 )
 </script>
@@ -45,6 +52,18 @@ const items = computed(() =>
             <p class="service-item__desc">{{ item.desc }}</p>
           </div>
         </div>
+      </div>
+
+      <div v-reveal class="tiers">
+        <p class="eyebrow tiers__label">{{ t('services.tiersLabel') }}</p>
+        <div class="tiers__grid">
+          <div v-for="(tier, i) in tiers" :key="i" class="tier">
+            <p class="tier__name serif">{{ tier.name }}</p>
+            <p class="tier__price">{{ tier.price }}</p>
+            <p class="tier__desc">{{ tier.desc }}</p>
+          </div>
+        </div>
+        <p class="tiers__note">{{ t('services.tiersNote') }}</p>
       </div>
     </div>
   </section>
@@ -93,17 +112,56 @@ const items = computed(() =>
   transition: background 0.2s var(--ease);
   cursor: pointer;
 }
-/* 5 items in a 2-col grid: let the last one fill the empty trailing cell */
-.service-item:last-child { grid-column: 1 / -1; }
 .service-item:hover { background: var(--pine-deep); }
 .service-item__icon { color: var(--honey); margin-bottom: 14px; width: 24px; height: 24px; }
 .service-item__icon :deep(svg) { width: 24px; height: 24px; }
 .service-item__title { font-size: 0.95rem; font-weight: 600; color: var(--paper); margin-bottom: 8px; }
 .service-item__desc { font-size: 0.88rem; color: #9FB3AB; line-height: 1.65; }
 
+/* ─── Monthly care plans ─── */
+.tiers {
+  margin-top: clamp(32px, 5vw, 48px);
+  padding-top: clamp(28px, 4vw, 40px);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+.tiers__label { color: var(--honey-soft); margin-bottom: 18px; }
+.tiers__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.tier {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: clamp(18px, 2.5vw, 24px);
+}
+.tier__name { font-size: 1.05rem; font-weight: 600; color: var(--paper); }
+.tier__price {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--honey-soft);
+}
+.tier__desc {
+  margin-top: 12px;
+  font-size: 0.86rem;
+  color: #9FB3AB;
+  line-height: 1.6;
+}
+.tiers__note {
+  margin-top: 16px;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: #7A9A90;
+}
+
 @media (max-width: 900px) {
   .services__layout { grid-template-columns: 1fr; }
   .services__sub { max-width: 52ch; }
+}
+@media (max-width: 640px) {
+  .tiers__grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) {
   .services__grid { grid-template-columns: 1fr; }

@@ -51,7 +51,7 @@ const WHATSAPP = '212629071889'
           <p class="contact__discovery-label eyebrow">{{ t('contact.discoveryLabel') }}</p>
           <ul class="contact__qs" role="list">
             <li v-for="q in questions" :key="q" class="contact__q">
-              <span class="contact__q-mark" aria-hidden="true">?</span>
+              <span class="contact__q-dot" aria-hidden="true"></span>
               <span>{{ q }}</span>
             </li>
           </ul>
@@ -129,6 +129,7 @@ const WHATSAPP = '212629071889'
 .contact__qs { display: flex; flex-direction: column; gap: 12px; margin-bottom: 22px; }
 .contact__q {
   display: flex;
+  align-items: flex-start;
   gap: 14px;
   font-family: 'Fraunces', serif;
   font-size: 1.05rem;
@@ -136,12 +137,13 @@ const WHATSAPP = '212629071889'
   line-height: 1.4;
 }
 [dir="rtl"] .contact__q { font-family: 'Cairo', sans-serif; font-weight: 500; }
-.contact__q-mark {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  color: var(--honey-soft);
+.contact__q-dot {
   flex-shrink: 0;
-  min-width: 16px;
+  width: 7px;
+  height: 7px;
+  margin-top: 8px;
+  border-radius: 50%;
+  background: var(--honey-soft);
 }
 .contact__tip { font-size: 0.9rem; color: #7A9A90; line-height: 1.6; max-width: 40ch; }
 .contact__tip :deep(strong) { color: var(--honey-soft); font-weight: 600; }

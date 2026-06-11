@@ -1,20 +1,22 @@
 {
   "seo": {
-    "title": "Développeur logiciel à Marrakech — Omar Bougma",
-    "description": "Je crée des sites web, des outils internes et de l'automatisation pour les petites entreprises à Marrakech — devis fixes, langage clair et des logiciels qui vous appartiennent. Près de quatre ans en développement, DevOps et sécurité."
+    "title": "Développeur web au Maroc — création & maintenance de sites | Omar Bougma",
+    "description": "Création de site web à Marrakech et partout au Maroc : sites, applications, automatisation, hébergement et maintenance. Développeur web — devis fixes, langage clair, et un site qui vous appartient."
   },
   "nav": {
     "about": "Pourquoi",
     "work": "Expérience",
+    "projects": "Projets",
     "services": "Services",
     "process": "Méthode",
+    "faq": "FAQ",
     "cta": "Discutons"
   },
   "hero": {
     "eyebrow": "Développeur logiciel · Marrakech",
     "heading": "Je crée des sites et des outils qui apportent plus de clients aux petites entreprises et",
     "headingEm": "moins de tâches ingrates",
-    "sub": "Près de quatre ans d'expérience à construire et faire tourner de vrais logiciels — aujourd'hui au service des entreprises locales honnêtes, sans jargon. Basé à Marrakech.",
+    "sub": "De l'expérience à construire et faire tourner de vrais logiciels depuis 2022 — aujourd'hui au service des petites entreprises partout au Maroc, sans jargon. Basé à Marrakech.",
     "cta1": "Voir mon expérience",
     "cta2": "Démarrer une conversation"
   },
@@ -25,33 +27,38 @@
   },
   "about": {
     "eyebrow": "Pourquoi je le fais",
-    "heading": "La raison honnête derrière tout ça.",
-    "body": "Aider les autres est ce qui compte le plus pour moi — et je ne peux pas atteindre tout le monde seul. Alors je construis les outils qui permettent aux entreprises locales honnêtes d'atteindre les personnes qui ont besoin d'elles, et de passer moins de temps à se battre avec leurs propres systèmes. Plus de clients, moins de temps perdu, plus de bien fait. C'est toute la raison de mon travail.",
-    "signature": "— Omar"
+    "heading": "La vraie raison derrière tout ça.",
+    "body": "Je veux qu'un commerçant passe ses soirées en famille plutôt qu'à se battre avec des tableurs. La plupart des petites entreprises font déjà du bon travail — elles perdent juste des heures avec des outils pénibles, et des clients qui ne les trouvent pas. Je crée les sites et les outils qui suppriment ces frictions, pour que vous gagniez plus de bons clients et plus de temps. C'est toute la raison de mon travail.",
+    "signature": "— Omar",
+    "photoAlt": "Omar Bougma",
+    "photoPlaceholder": "Votre photo ici"
   },
   "work": {
     "eyebrow": "Expérience",
-    "title": "Près de quatre ans à construire et faire tourner de vrais systèmes.",
-    "duration": "3,8 ans",
+    "title": "Construire et faire tourner de vrais systèmes.",
+    "duration": "Depuis 2022",
     "role": "Développement · DevOps · Sécurité",
-    "intro": "J'ai passé près de quatre ans dans une startup en portant trois casquettes à la fois — écrire le logiciel, gérer l'infrastructure sur laquelle il tournait, et le garder sécurisé. J'ai pris les problèmes en charge de la première idée jusqu'à la production, et appris comment les systèmes survivent vraiment au contact des utilisateurs réels.",
+    "intro": "Depuis 2022, je travaille sur trois fronts à la fois — écrire le logiciel, gérer l'infrastructure sur laquelle il tourne, et le garder sécurisé. Je prends les problèmes en charge de la première idée jusqu'à la production, et j'ai appris comment les systèmes survivent vraiment au contact des utilisateurs réels.",
     "highlights": [
       {
         "label": "Construire le produit",
-        "desc": "Développement full-stack de bout en bout — frontend, backend, et les données entre les deux, conçus comme un tout connecté."
+        "desc": "Développement full-stack de bout en bout — frontend, backend, et les données entre les deux, conçus comme un tout connecté.",
+        "metric": "Chiffre à venir — ex. [N] fonctionnalités livrées sur [N] apps en production."
       },
       {
         "label": "Gérer l'infrastructure",
-        "desc": "DevOps du déploiement au monitoring — mettre les fonctionnalités en production de façon fiable et les maintenir tandis que les gens en dépendaient chaque jour."
+        "desc": "DevOps du déploiement au monitoring — mettre les fonctionnalités en production de façon fiable et les maintenir tandis que les gens en dépendaient chaque jour.",
+        "metric": "Chiffre à venir — ex. [N]% de disponibilité · [N] déploiements/semaine."
       },
       {
         "label": "Assurer la sécurité",
-        "desc": "La sécurité traitée comme partie intégrante de la construction, pas un ajout — durcir ce qu'on livrait face aux risques réels."
+        "desc": "La sécurité traitée comme partie intégrante de la construction, pas un ajout — durcir ce qu'on livrait face aux risques réels.",
+        "metric": "Chiffre à venir — ex. [N] vulnérabilités corrigées · zéro faille."
       }
     ],
     "skillsLabel": "Mes domaines",
     "skills": ["Développement full-stack", "DevOps & déploiement", "Sécurité", "Automatisation", "Infrastructure", "Maintenance"],
-    "note": "Aujourd'hui, je prends ce que j'ai appris en développement, en opérations et en sécurité au sein d'une entreprise, et je l'offre directement aux entreprises honnêtes qui en ont le plus besoin."
+    "note": "Aujourd'hui, je prends ce que j'ai appris en développement, en opérations et en sécurité, et je l'offre directement aux petites entreprises qui en ont le plus besoin."
   },
   "services": {
     "eyebrow": "Ce que je construis",
@@ -62,8 +69,14 @@
       { "title": "Sites & Applications Web", "desc": "Des pages d'atterrissage aux plateformes complètes — conçus pour convertir, durer, et vous appartenir après mon départ." },
       { "title": "Systèmes Internes", "desc": "Tableaux de bord, outils et workflows que votre équipe utilisera vraiment — conçus autour de votre façon de penser." },
       { "title": "Automatisation", "desc": "Supprimez les tâches répétitives. Libérez vos équipes pour le travail qui nécessite vraiment un humain." },
-      { "title": "Appareils Connectés", "desc": "Solutions IoT qui relient vos opérations numériques et le monde physique — pratiques, pas juste intelligentes." },
-      { "title": "Logiciels Sur Mesure", "desc": "Ce que le problème nécessite. Construit pour vous, documenté, et remis — jamais retenu en otage." }
+      { "title": "Hébergement, Maintenance & Sécurité", "desc": "Je le garde en marche — hébergement, mises à jour, sauvegardes et sécurité, chaque mois. Pas de disparition après le lancement." }
+    ],
+    "tiersLabel": "Forfaits mensuels",
+    "tiersNote": "Les noms et prix des forfaits sont des espaces réservés — tarifs définitifs à fixer.",
+    "tiers": [
+      { "name": "Basic", "desc": "Hébergement, mises à jour & sauvegardes", "price": "[prix] / mois" },
+      { "name": "Standard", "desc": "Tout le Basic, plus surveillance & corrections prioritaires", "price": "[prix] / mois" },
+      { "name": "Premium", "desc": "Tout le Standard, plus renforcement de la sécurité & rapport mensuel", "price": "[prix] / mois" }
     ]
   },
   "process": {
@@ -98,5 +111,67 @@
     "tip": "Je continuerai à résumer votre monde jusqu'à ce que vous disiez <strong>« c'est ça »</strong>. Laissez « non » rester sans risque — c'est tout le principe.",
     "closingNote": "« Commencez par le pourquoi. Le quoi s'en occupera. »",
     "location": "Marrakech, Maroc"
+  },
+  "projects": {
+    "eyebrow": "Travaux sélectionnés",
+    "title": "Ce que j'ai construit.",
+    "intro": "Quelques projets — le problème, ce que j'ai construit, et où en est chacun aujourd'hui.",
+    "imagePlaceholder": "Capture d'écran à venir",
+    "maintenanceLink": "→ Le garder en marche après le lancement",
+    "visit": "Voir le site →",
+    "items": [
+      {
+        "name": "BlueSky — SaaS de comptabilité & budgétisation",
+        "tag": "SaaS financier · réalisé chez un ancien employeur",
+        "problem": "Les entreprises ont besoin d'un seul endroit pour gérer leurs opérations financières, la budgétisation et la planification stratégique — avec une vision prospective de leur santé financière.",
+        "built": "BlueSky — un SaaS tout-en-un de comptabilité et de planification budgétaire, couvrant revenus, dépenses, actifs, passifs et plus, du suivi quotidien aux projections à haut niveau.",
+        "tech": "Un SaaS full-stack avec des analyses pilotées par l'IA qui transforment les données historiques en prévisions de santé financière.",
+        "outcome": "Construit et utilisé en production chez un ancien employeur.",
+        "note": ""
+      },
+      {
+        "name": "MeinLedger — suivi de finances personnelles",
+        "tag": "Projet solo · terminé",
+        "problem": "Les gens veulent suivre leurs finances de façon claire et simple, sans application surchargée.",
+        "built": "Conçu, construit et exploité — valeur nette, trésorerie, dépenses par catégorie, comptes, objectifs et abonnements.",
+        "tech": "Une application web full-stack, de la base de données à l'interface, déployée et maintenue de bout en bout — entièrement en solo.",
+        "outcome": "Un produit terminé que j'ai conçu, livré et exploité moi-même.",
+        "note": ""
+      },
+      {
+        "name": "Fintbib — plateforme de gestion de cabinet médical",
+        "tag": "Cabinets médicaux · en développement",
+        "problem": "Les cabinets avaient besoin d'un seul endroit pour gérer tout le côté patient — pas seulement les dossiers, mais aussi les visites, les rendez-vous et les documents.",
+        "built": "Une plateforme de gestion de cabinet — profils et historique patients, visites et diagnostics, rendez-vous, gestion des documents et assurance, le tout en un seul endroit.",
+        "tech": "Une application web full-stack, conçue priorité à la confidentialité et à la conformité, pour les établissements médicaux.",
+        "outcome": "En développement, en attente d'approbation réglementaire avant de traiter de vraies données patients.",
+        "note": "Affiché avec des données fictives uniquement."
+      },
+      {
+        "name": "Abdellah Bougma — portfolio d'artisan",
+        "tag": "Projet client",
+        "problem": "Un artisan marocain avait besoin d'un espace en ligne élégant pour son art et sa galerie.",
+        "built": "Un site portfolio — son histoire, sa démarche et une galerie de ses œuvres — conçu autour de son goût.",
+        "tech": "Un site sur mesure, conçu et construit pour correspondre à son style.",
+        "outcome": "Livré pour un vrai client.",
+        "note": ""
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Témoignages",
+    "title": "Ce que disent les clients.",
+    "comingSoon": "Les témoignages clients arriveront bientôt ici — les premiers sont en route."
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions que vous pourriez avoir.",
+    "items": [
+      { "q": "Combien coûte un site web ?", "a": "Vous obtenez un devis fixe à l'avance — sans surprise. La plupart des sites de petites entreprises se situent dans une fourchette claire. [Brouillon : fourchettes exactes à ajouter.]" },
+      { "q": "Combien de temps ça prend ?", "a": "Généralement quelques semaines, selon l'ampleur. Je vous donne un calendrier avant de commencer. [Brouillon : durées typiques à ajouter.]" },
+      { "q": "Que dois-je préparer ?", "a": "Très peu — votre contenu et une idée de ce que vous voulez. Je guide le reste, en langage clair." },
+      { "q": "Est-ce que je possède vraiment tout ?", "a": "Oui. Chaque site, outil et compte vous appartient — code et contenu inclus. Aucun verrouillage, jamais." },
+      { "q": "Que se passe-t-il après le lancement ?", "a": "Je peux le garder en marche — hébergement, mises à jour, sauvegardes et sécurité — via un forfait mensuel. Voir Services ci-dessus." }
+    ]
   }
 }

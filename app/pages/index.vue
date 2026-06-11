@@ -21,6 +21,7 @@ const jsonLd = computed(() => ({
   email: 'mailto:bougmaomar2022@gmail.com',
   telephone: '+212629071889',
   address: { '@type': 'PostalAddress', addressLocality: 'Marrakesh', addressCountry: 'MA' },
+  areaServed: { '@type': 'Country', name: 'Morocco' },
   knowsLanguage: ['en', 'fr', 'ar'],
   knowsAbout: ['Software development', 'Web development', 'DevOps', 'Security', 'Automation', 'Internal tools'],
 }))
@@ -68,9 +69,11 @@ useHead(() => ({
       <HeroSection />
       <ReframeSection />
       <LazyWorkSection id="work" hydrate-on-visible />
+      <LazyProjectsSection id="projects" hydrate-on-visible />
       <LazyServicesSection id="services" hydrate-on-visible />
       <LazyProcessSection id="process" hydrate-on-visible />
       <LazyAboutSection id="about" hydrate-on-visible />
+      <LazyFaqSection id="faq" hydrate-on-visible />
       <LazyContactSection id="contact" hydrate-on-visible />
     </main>
     <WhatsAppFab />

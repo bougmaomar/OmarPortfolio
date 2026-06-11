@@ -5,7 +5,7 @@ const switchLocalePath = useSwitchLocalePath()
 const scrolled = ref(false)
 const menuOpen = ref(false)
 
-const SECTION_IDS = ['work', 'services', 'process', 'about', 'contact']
+const SECTION_IDS = ['work', 'projects', 'services', 'process', 'about', 'faq', 'contact']
 const NAV_OFFSET = 80
 
 onMounted(() => {
@@ -50,9 +50,10 @@ watch(locale, async () => {
 
 const links = computed(() => [
   { label: t('nav.work'), href: '#work' },
+  { label: t('nav.projects'), href: '#projects' },
   { label: t('nav.services'), href: '#services' },
   { label: t('nav.process'), href: '#process' },
-  { label: t('nav.about'), href: '#about' },
+  { label: t('nav.faq'), href: '#faq' },
 ])
 
 function close() { menuOpen.value = false }

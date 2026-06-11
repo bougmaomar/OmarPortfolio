@@ -155,6 +155,24 @@ button {
   padding: 0 clamp(24px, 6vw, 72px);
 }
 
+/* ─── Asset placeholders (screenshots, photo — pending real assets) ─── */
+.placeholder-img {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 16px;
+  background:
+    repeating-linear-gradient(45deg, var(--paper-2), var(--paper-2) 11px, #DCE2D6 11px, #DCE2D6 22px);
+  border: 1.5px dashed #AEB9A9;
+  border-radius: 12px;
+  color: #6B7A70;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  min-height: 150px;
+}
+
 /* ─── RTL overrides ──────────────────────────────── */
 [dir="rtl"] .hero__scroll {
   left: auto;
@@ -180,9 +198,6 @@ button {
 [dir="rtl"] .contact__info {
   align-items: flex-start;
   text-align: left;
-}
-[dir="rtl"] .contact__q-mark {
-  order: 1;
 }
 [dir="rtl"] .nav__links a {
   direction: rtl;
