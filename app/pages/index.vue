@@ -18,7 +18,7 @@ const jsonLd = computed(() => ({
   name: 'Omar Bougma',
   jobTitle: 'Software Developer',
   url: siteUrl + '/',
-  email: 'mailto:bougmaomar2022@gmail.com',
+  email: 'mailto:contact@omarbougma.com',
   telephone: '+212629071889',
   address: { '@type': 'PostalAddress', addressLocality: 'Marrakesh', addressCountry: 'MA' },
   areaServed: { '@type': 'Country', name: 'Morocco' },

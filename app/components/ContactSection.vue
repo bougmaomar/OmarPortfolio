@@ -4,7 +4,7 @@ const { t } = useI18n()
 const questions = computed(() =>
   [0, 1, 2].map(i => t(`contact.questions[${i}]`))
 )
-const EMAIL = 'bougmaomar2022@gmail.com'
+const EMAIL = 'contact@omarbougma.com'
 const PHONE = '0629071889'
 const WHATSAPP = '212629071889'
 </script>
