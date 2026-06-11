@@ -167,8 +167,8 @@
     "eyebrow": "FAQ",
     "title": "Questions you might have.",
     "items": [
-      { "q": "How much does a website cost?", "a": "You get a fixed quote up front — no surprises. Most small-business sites fall in a clear range. [Draft: exact price ranges to be added.]" },
-      { "q": "How long does it take?", "a": "Usually a few weeks, depending on scope. I give you a timeline before we start. [Draft: typical ranges to be added.]" },
+      { "q": "How much does a website cost?", "a": "You get a fixed quote up front — no surprises. Tell me what you need, and I'll give you a clear price before any work starts." },
+      { "q": "How long does it take?", "a": "Usually a few weeks, depending on scope. I'll give you a realistic timeline before we begin." },
       { "q": "What do I need to prepare?", "a": "Very little — your content and a rough sense of what you want. I'll guide the rest in plain language." },
       { "q": "Do I really own everything?", "a": "Yes. Every site, tool, and account is yours — code and content included. No lock-in, ever." },
       { "q": "What happens after launch?", "a": "I can keep it running — hosting, updates, backups, and security — through a monthly care plan. See Services above." }

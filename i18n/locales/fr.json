@@ -167,8 +167,8 @@
     "eyebrow": "FAQ",
     "title": "Questions que vous pourriez avoir.",
     "items": [
-      { "q": "Combien coûte un site web ?", "a": "Vous obtenez un devis fixe à l'avance — sans surprise. La plupart des sites de petites entreprises se situent dans une fourchette claire. [Brouillon : fourchettes exactes à ajouter.]" },
-      { "q": "Combien de temps ça prend ?", "a": "Généralement quelques semaines, selon l'ampleur. Je vous donne un calendrier avant de commencer. [Brouillon : durées typiques à ajouter.]" },
+      { "q": "Combien coûte un site web ?", "a": "Vous obtenez un devis fixe à l'avance — sans surprise. Dites-moi ce qu'il vous faut, et je vous donne un prix clair avant tout travail." },
+      { "q": "Combien de temps ça prend ?", "a": "Généralement quelques semaines, selon l'ampleur. Je vous donne un calendrier réaliste avant de commencer." },
       { "q": "Que dois-je préparer ?", "a": "Très peu — votre contenu et une idée de ce que vous voulez. Je guide le reste, en langage clair." },
       { "q": "Est-ce que je possède vraiment tout ?", "a": "Oui. Chaque site, outil et compte vous appartient — code et contenu inclus. Aucun verrouillage, jamais." },
       { "q": "Que se passe-t-il après le lancement ?", "a": "Je peux le garder en marche — hébergement, mises à jour, sauvegardes et sécurité — via un forfait mensuel. Voir Services ci-dessus." }

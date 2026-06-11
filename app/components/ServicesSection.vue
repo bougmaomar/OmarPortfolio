@@ -17,13 +17,6 @@ const items = computed(() =>
   }))
 )
 
-const tiers = computed(() =>
-  [0, 1, 2].map(i => ({
-    name: t(`services.tiers[${i}].name`),
-    desc: t(`services.tiers[${i}].desc`),
-    price: t(`services.tiers[${i}].price`),
-  }))
-)
 </script>
 
 <template>
@@ -52,18 +45,6 @@ const tiers = computed(() =>
             <p class="service-item__desc">{{ item.desc }}</p>
           </div>
         </div>
-      </div>
-
-      <div v-reveal class="tiers">
-        <p class="eyebrow tiers__label">{{ t('services.tiersLabel') }}</p>
-        <div class="tiers__grid">
-          <div v-for="(tier, i) in tiers" :key="i" class="tier">
-            <p class="tier__name serif">{{ tier.name }}</p>
-            <p class="tier__price">{{ tier.price }}</p>
-            <p class="tier__desc">{{ tier.desc }}</p>
-          </div>
-        </div>
-        <p class="tiers__note">{{ t('services.tiersNote') }}</p>
       </div>
     </div>
   </section>
@@ -118,50 +99,9 @@ const tiers = computed(() =>
 .service-item__title { font-size: 0.95rem; font-weight: 600; color: var(--paper); margin-bottom: 8px; }
 .service-item__desc { font-size: 0.88rem; color: #9FB3AB; line-height: 1.65; }
 
-/* ─── Monthly care plans ─── */
-.tiers {
-  margin-top: clamp(32px, 5vw, 48px);
-  padding-top: clamp(28px, 4vw, 40px);
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-}
-.tiers__label { color: var(--honey-soft); margin-bottom: 18px; }
-.tiers__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-}
-.tier {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: clamp(18px, 2.5vw, 24px);
-}
-.tier__name { font-size: 1.05rem; font-weight: 600; color: var(--paper); }
-.tier__price {
-  margin-top: 6px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--honey-soft);
-}
-.tier__desc {
-  margin-top: 12px;
-  font-size: 0.86rem;
-  color: #9FB3AB;
-  line-height: 1.6;
-}
-.tiers__note {
-  margin-top: 16px;
-  font-size: 0.78rem;
-  font-style: italic;
-  color: #7A9A90;
-}
-
 @media (max-width: 900px) {
   .services__layout { grid-template-columns: 1fr; }
   .services__sub { max-width: 52ch; }
-}
-@media (max-width: 640px) {
-  .tiers__grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) {
   .services__grid { grid-template-columns: 1fr; }

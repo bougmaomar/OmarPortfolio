@@ -6,7 +6,6 @@ const highlights = computed(() =>
   [0, 1, 2].map(i => ({
     label: t(`work.highlights[${i}].label`),
     desc: t(`work.highlights[${i}].desc`),
-    metric: t(`work.highlights[${i}].metric`),
   }))
 )
 const skills = computed(() =>
@@ -50,7 +49,6 @@ const skills = computed(() =>
               <div>
                 <h3 class="exp-highlight__label">{{ h.label }}</h3>
                 <p class="exp-highlight__desc">{{ h.desc }}</p>
-                <p class="exp-highlight__metric">{{ h.metric }}</p>
               </div>
             </li>
           </ul>
@@ -164,16 +162,6 @@ const skills = computed(() =>
   color: var(--ink-soft);
   line-height: 1.65;
   max-width: 54ch;
-}
-.exp-highlight__metric {
-  margin-top: 8px;
-  display: inline-block;
-  font-size: 0.8rem;
-  font-style: italic;
-  color: #8A968F;
-  border: 1px dashed #c2cabd;
-  border-radius: 6px;
-  padding: 3px 10px;
 }
 
 .exp-detail__note {
