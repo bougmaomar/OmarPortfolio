@@ -1,7 +1,9 @@
 {
   "seo": {
-    "title": "Software Developer — Websites & Apps across Morocco | Omar Bougma",
-    "description": "I build websites, internal tools, and automation for small businesses across Morocco — based in Marrakesh. Fixed quotes, plain language, and software you fully own."
+    "title": "Software Developer - Websites & Apps across Morocco {'|'} Omar Bougma",
+    "description": "I build websites, internal tools, and automation for small businesses across Morocco, based in Marrakesh. Fixed quotes, plain language, and software you fully own.",
+    "jobTitle": "Software Developer",
+    "knowsAbout": ["Software development", "Web development", "DevOps", "Security", "Automation", "Internal tools"]
   },
   "nav": {
     "about": "Why",
@@ -9,6 +11,7 @@
     "projects": "Projects",
     "services": "Services",
     "process": "Process",
+    "pricing": "Pricing",
     "faq": "FAQ",
     "cta": "Let's talk"
   },
@@ -16,7 +19,7 @@
     "eyebrow": "Software developer · Marrakesh",
     "heading": "I build websites and tools that get small businesses more customers and",
     "headingEm": "less busywork",
-    "sub": "Experience building and running real software since 2022 — now helping small businesses across Morocco get results without the jargon. Based in Marrakesh.",
+    "sub": "Experience building and running real software since 2022. Now helping small businesses across Morocco get results without the jargon. Based in Marrakesh.",
     "cta1": "See my experience",
     "cta2": "Start a conversation"
   },
@@ -28,8 +31,8 @@
   "about": {
     "eyebrow": "Why I care",
     "heading": "The real reason I do this.",
-    "body": "I want a shop owner to spend their evenings with family instead of fighting spreadsheets. Most small businesses already do good work — they just lose hours to clunky tools and lose customers who can't find them. I build the websites and tools that take that friction away, so you get more of the right customers and more of your time back. That's the whole reason I do this.",
-    "signature": "— Omar",
+    "body": "I want a shop owner to spend their evenings with family instead of fighting spreadsheets. Most small businesses already do good work. They just lose hours to clunky tools and lose customers who can't find them. I build the websites and tools that take that friction away, so you get more of the right customers and more of your time back. That's the whole reason I do this.",
+    "signature": "Omar",
     "photoAlt": "Omar Bougma",
     "photoPlaceholder": "Your photo here"
   },
@@ -38,22 +41,24 @@
     "title": "Building and running real systems.",
     "duration": "Since 2022",
     "role": "Development · DevOps · Security",
-    "intro": "Since 2022 I've worked across three disciplines at once — writing the software, running the infrastructure it ships on, and keeping it secure. I own problems from the first idea to production, and have learned how systems actually survive contact with real users.",
+    "intro": "Since 2022 I've worked across three disciplines at once:",
+    "introList": ["Writing the software", "Running the infrastructure it ships on", "Keeping it secure"],
+    "introOutro": "I own problems from the first idea to production, and have learned how systems actually survive contact with real users.",
     "highlights": [
       {
         "label": "Built the product",
-        "desc": "Full-stack development end to end — frontend, backend, and the data in between, designed as one connected whole.",
-        "metric": "Metric pending — e.g. shipped [N] features across [N] production apps."
+        "desc": "Full-stack development end to end: frontend, backend, and the data in between, designed as one connected whole.",
+        "metric": "Metric pending, e.g. shipped [N] features across [N] production apps."
       },
       {
         "label": "Ran the infrastructure",
-        "desc": "DevOps from deployment to monitoring — shipping features into production reliably and keeping them running as people relied on them every day.",
-        "metric": "Metric pending — e.g. [N]% uptime · [N] deploys per week."
+        "desc": "DevOps from deployment to monitoring: shipping features into production reliably and keeping them running as people relied on them every day.",
+        "metric": "Metric pending, e.g. [N]% uptime · [N] deploys per week."
       },
       {
         "label": "Kept it secure",
-        "desc": "Treated security as part of the build, not an afterthought — hardening what we shipped against real-world risk.",
-        "metric": "Metric pending — e.g. [N] vulnerabilities resolved · zero breaches."
+        "desc": "Treated security as part of the build, not an afterthought: hardening what we shipped against real-world risk.",
+        "metric": "Metric pending, e.g. [N] vulnerabilities resolved · zero breaches."
       }
     ],
     "skillsLabel": "What I worked across",
@@ -64,15 +69,15 @@
     "eyebrow": "What I build",
     "heading1": "The right medium",
     "heading2": "for the real problem.",
-    "sub": "I don't lead with a technology stack. I start with what you're trying to accomplish and choose whatever makes the most sense — often simpler than you expect.",
+    "sub": "I don't lead with a technology stack. I start with what you're trying to accomplish and choose whatever makes the most sense, often simpler than you expect.",
     "items": [
-      { "title": "Websites & Web Apps", "desc": "From landing pages to full platforms — built to convert, to last, and to be yours after I leave." },
-      { "title": "Internal Systems", "desc": "Dashboards, tools, and workflows your team will actually use — designed around how you already think." },
+      { "title": "Websites & Web Apps", "desc": "From landing pages to full platforms, built to convert, to last, and to be yours after I leave." },
+      { "title": "Internal Systems", "desc": "Dashboards, tools, and workflows your team will actually use, designed around how you already think." },
       { "title": "Automation", "desc": "Remove the repetitive. Free your people for the work that actually needs a human behind it." },
-      { "title": "Hosting, Maintenance & Security", "desc": "I keep it running — hosting, updates, backups, and security, every month. No vanishing after launch." }
+      { "title": "Hosting, Maintenance & Security", "desc": "I keep it running: hosting, updates, backups, and security, every month. No vanishing after launch." }
     ],
     "tiersLabel": "Monthly care plans",
-    "tiersNote": "Plan names and prices are placeholders — final pricing to be set.",
+    "tiersNote": "Plan names and prices are placeholders. Final pricing to be set.",
     "tiers": [
       { "name": "Basic", "desc": "Hosting, updates & backups", "price": "[price] / mo" },
       { "name": "Standard", "desc": "Everything in Basic, plus monitoring & priority fixes", "price": "[price] / mo" },
@@ -85,18 +90,18 @@
     "heading2": "Kept every time.",
     "principles": [
       "It's not about me. I lead with your world, not my skill list.",
-      "You own everything — no lock-in, no jargon, plain language as we go.",
+      "You own everything: no lock-in, no jargon, plain language as we go.",
       "I'm measured on your outcome, not on my cleverness.",
       "Honest work, for honest businesses, only.",
       "I build things you can still run after I'm gone."
     ],
-    "audit": "You may have hired a developer who vanished halfway, overcharged, or left you with something only they could touch. <strong>That's exactly why I work this way — stated out loud, so it can't surprise either of us.</strong>"
+    "audit": "You may have hired a developer who vanished halfway, overcharged, or left you with something only they could touch. <strong>That's exactly why I work this way, stated out loud, so it can't surprise either of us.</strong>"
   },
   "contact": {
     "eyebrow": "Let's talk",
     "heading1": "Ready to grow",
     "heading2": "your impact?",
-    "sub": "I start every conversation the same way — understanding your world before I say anything about mine.",
+    "sub": "I start every conversation the same way: understanding your world before I say anything about mine.",
     "cta": "Start the conversation",
     "orEmail": "Or email me directly at",
     "orWhatsapp": "Or message me on WhatsApp at",
@@ -108,50 +113,50 @@
       "What's the hardest part of running this, day to day?",
       "What would have to change for this to feel worth it to you?"
     ],
-    "tip": "I'll keep summarizing your world back until you say <strong>\"that's right.\"</strong> Let \"no\" stay safe — that's the whole point.",
+    "tip": "I'll keep summarizing your world back until you say <strong>\"that's right.\"</strong> Let \"no\" stay safe. That's the whole point.",
     "closingNote": "\"Lead with the why. The what will take care of itself.\"",
     "location": "Marrakesh, Morocco"
   },
   "projects": {
     "eyebrow": "Selected work",
     "title": "Things I've built.",
-    "intro": "A few projects — the problem, what I built, and where each one stands today.",
+    "intro": "A few projects: the problem, what I built, and where each one stands today.",
     "imagePlaceholder": "Screenshot coming soon",
     "maintenanceLink": "→ Keep it running after launch",
     "visit": "Visit the site →",
     "items": [
       {
-        "name": "BlueSky — accounting & budgeting SaaS",
+        "name": "BlueSky - accounting & budgeting SaaS",
         "tag": "Financial SaaS · built at a previous employer",
-        "problem": "Companies need one place to handle financial operations, budgeting, and strategic planning — with a forward view of their financial health.",
-        "built": "BlueSky — an all-in-one financial accounting and budget-planning SaaS, covering revenues, expenses, assets, liabilities, and more, from day-to-day tracking to high-level projections.",
+        "problem": "Companies need one place to handle financial operations, budgeting, and strategic planning, with a forward view of their financial health.",
+        "built": "BlueSky: an all-in-one financial accounting and budget-planning SaaS, covering revenues, expenses, assets, liabilities, and more, from day-to-day tracking to high-level projections.",
         "tech": "A full-stack SaaS with AI-driven analytics that turn historical data into predictions of financial health.",
         "outcome": "Built and used in production at a previous employer.",
         "note": ""
       },
       {
-        "name": "MeinLedger — personal finance tracker",
+        "name": "MeinLedger - personal finance tracker",
         "tag": "Solo project · completed",
         "problem": "People want a clear, simple way to track personal finances without a bloated app.",
-        "built": "Designed, built, and ran a personal finance tracker — net worth, cash flow, spending by category, accounts, goals, and subscriptions.",
-        "tech": "A full-stack web app, from database to interface, deployed and maintained end to end — entirely solo.",
+        "built": "Designed, built, and ran a personal finance tracker: net worth, cash flow, spending by category, accounts, goals, and subscriptions.",
+        "tech": "A full-stack web app, from database to interface, deployed and maintained end to end, entirely solo.",
         "outcome": "A completed product I designed, shipped, and operated myself.",
         "note": ""
       },
       {
-        "name": "Fintbib — medical practice platform",
+        "name": "Fintbib - medical practice platform",
         "tag": "Medical practices · in development",
-        "problem": "Medical practices needed one place to run the patient side of the clinic — not just records, but visits, appointments, and documents too.",
-        "built": "A practice-management platform — patient profiles and history, visits and diagnoses, appointments, document management, and insurance, all in one place.",
+        "problem": "Medical practices needed one place to run the patient side of the clinic: not just records, but visits, appointments, and documents too.",
+        "built": "A practice-management platform: patient profiles and history, visits and diagnoses, appointments, document management, and insurance, all in one place.",
         "tech": "A full-stack web app built privacy- and compliance-first, for medical establishments.",
         "outcome": "In development, pending regulatory approval before handling real patient data.",
         "note": "Shown with fictional sample data only."
       },
       {
-        "name": "Abdellah Bougma — artisan portfolio",
+        "name": "Abdellah Bougma - artisan portfolio",
         "tag": "Client project",
         "problem": "A Moroccan artisan needed an elegant online home for his craft and gallery.",
-        "built": "A portfolio site — his story, his process, and a gallery of his work — designed around his taste.",
+        "built": "A portfolio site with his story, his process, and a gallery of his work, designed around his taste.",
         "tech": "A custom site, designed and built to match his style.",
         "outcome": "Delivered for a real client.",
         "note": ""
@@ -161,17 +166,66 @@
   "testimonials": {
     "eyebrow": "Testimonials",
     "title": "What clients say.",
-    "comingSoon": "Client quotes will land here soon — the first ones are on the way."
+    "comingSoon": "Client quotes will land here soon. The first ones are on the way."
+  },
+  "pricing": {
+    "seoTitle": "Pricing - Websites & Apps in Morocco {'|'} Omar Bougma",
+    "seoDescription": "Clear, fixed prices in Moroccan dirhams: landing pages from 1,500 DH, business websites from 4,000 DH, custom websites from 5,000 DH, and monthly care plans from 150 DH.",
+    "eyebrow": "Pricing",
+    "title": "Clear prices. No surprises.",
+    "sub": "Every project starts with a fixed, written quote. These are honest starting points in Moroccan dirhams, so you know what to expect before we even talk.",
+    "buildsLabel": "One-time projects",
+    "popular": "Popular choice",
+    "builds": [
+      {
+        "name": "Landing page",
+        "oldPrice": "2,500 DH",
+        "price": "from 1,500 DH",
+        "desc": "A single page that presents your business and gets visitors to contact you.",
+        "features": ["One page, designed around your goal", "WhatsApp & contact integration", "Fast and mobile-first", "2 rounds of revisions included", "Delivered in about a week"]
+      },
+      {
+        "name": "Business website",
+        "oldPrice": "5,000 DH",
+        "price": "from 4,000 DH",
+        "desc": "A complete site for your company: your services, your story, and the proof of your work.",
+        "features": ["3 to 6 pages", "SEO foundations for Google", "Available in French, Arabic & English", "3 rounds of revisions included", "Easy to update after launch"]
+      },
+      {
+        "name": "Custom website",
+        "price": "from 5,000 DH+",
+        "priceNote": "Not a fixed price: it depends on the number of pages and features. You still get a fixed quote before we start.",
+        "desc": "A site built entirely around your needs: a web app, an online store, or something no template can do.",
+        "features": ["Pages and features shaped to you", "Web app or online store options", "Training included at handover", "Revision rounds agreed in your quote", "You own the code and the data"]
+      }
+    ],
+    "customNote": "Internal tools and automation are quoted per project. Tell me what eats your time, and I'll give you a fixed price for removing it.",
+    "plansLabel": "Monthly care plans",
+    "plansSub": "After launch, I keep your site fast, secure, and online, so you never have to think about it.",
+    "plans": [
+      { "name": "Basic", "price": "150 DH", "period": "/ month", "features": ["Hosting", "Updates", "Weekly backups"] },
+      { "name": "Standard", "price": "300 DH", "period": "/ month", "features": ["Everything in Basic", "Uptime monitoring", "Priority fixes"] },
+      { "name": "Premium", "price": "500 DH", "period": "/ month", "features": ["Everything in Standard", "Security hardening", "Monthly report"] }
+    ],
+    "notesLabel": "Good to know",
+    "notes": [
+      "A fixed quote in writing before any work starts. The price doesn't move.",
+      "You own everything: domain, hosting, code, and content.",
+      "No hidden fees. If something extra is needed, we discuss it first."
+    ],
+    "ctaTitle": "Not sure what you need?",
+    "ctaSub": "Tell me about your business and I'll recommend the simplest option that works.",
+    "cta": "Start a conversation"
   },
   "faq": {
     "eyebrow": "FAQ",
     "title": "Questions you might have.",
     "items": [
-      { "q": "How much does a website cost?", "a": "You get a fixed quote up front — no surprises. Tell me what you need, and I'll give you a clear price before any work starts." },
+      { "q": "How much does a website cost?", "a": "You get a fixed quote up front, no surprises. Tell me what you need, and I'll give you a clear price before any work starts." },
       { "q": "How long does it take?", "a": "Usually a few weeks, depending on scope. I'll give you a realistic timeline before we begin." },
-      { "q": "What do I need to prepare?", "a": "Very little — your content and a rough sense of what you want. I'll guide the rest in plain language." },
-      { "q": "Do I really own everything?", "a": "Yes. Every site, tool, and account is yours — code and content included. No lock-in, ever." },
-      { "q": "What happens after launch?", "a": "I can keep it running — hosting, updates, backups, and security — through a monthly care plan. See Services above." }
+      { "q": "What do I need to prepare?", "a": "Very little: your content and a rough sense of what you want. I'll guide the rest in plain language." },
+      { "q": "Do I really own everything?", "a": "Yes. Every site, tool, and account is yours, code and content included. No lock-in, ever." },
+      { "q": "What happens after launch?", "a": "I can keep it running through a monthly care plan: hosting, updates, backups, and security. See Services above." }
     ]
   }
 }

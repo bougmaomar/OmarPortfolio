@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+  ssr: true,
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   // Static generation for Cloudflare Pages: prerender every locale route to
@@ -7,7 +8,7 @@ export default defineNuxtConfig({
     preset: 'static',
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/fr/', '/ar/', '/sitemap.xml', '/robots.txt'],
+      routes: ['/', '/fr/', '/ar/', '/pricing', '/fr/pricing', '/ar/pricing', '/sitemap.xml', '/robots.txt'],
       failOnError: false,
     },
   },
@@ -22,6 +23,11 @@ export default defineNuxtConfig({
   i18n: {
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
+    // No auto-redirect based on browser language: with static hosting the
+    // switch happens client-side after load, which briefly mixes locales in
+    // the lazy-hydrated sections. Visitors choose via the language switcher;
+    // search engines get the right locale from hreflang.
+    detectBrowserLanguage: false,
     baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://omarbougma.com',
     locales: [
       { code: 'en', language: 'en-US', name: 'English', dir: 'ltr', file: 'en.json' },
@@ -39,7 +45,7 @@ export default defineNuxtConfig({
       htmlAttrs: {},
       // Title + description + OG/Twitter/canonical/hreflang/JSON-LD are set
       // per-locale in app/pages/index.vue. This title is only a fallback.
-      title: 'Omar Bougma — Software Developer, Marrakesh',
+      title: 'Omar Bougma - Software Developer, Marrakesh',
       meta: [
         { name: 'theme-color', content: '#173A33' },
         { name: 'format-detection', content: 'telephone=no' }

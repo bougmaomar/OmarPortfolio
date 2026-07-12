@@ -1,6 +1,7 @@
 <script setup>
 const { t, locale, locales } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
+const localePath = useLocalePath()
 
 const scrolled = ref(false)
 const menuOpen = ref(false)
@@ -48,12 +49,21 @@ watch(locale, async () => {
   }))
 })
 
+// Section links carry the locale home path so they also work from other
+// pages (e.g. /pricing). On the home page the browser treats them as
+// same-page hash links and just scrolls.
+const homePath = computed(() => {
+  const p = localePath('/')
+  return p.endsWith('/') ? p : p + '/'
+})
+
 const links = computed(() => [
-  { label: t('nav.work'), href: '#work' },
-  { label: t('nav.projects'), href: '#projects' },
-  { label: t('nav.services'), href: '#services' },
-  { label: t('nav.process'), href: '#process' },
-  { label: t('nav.faq'), href: '#faq' },
+  { label: t('nav.work'), href: `${homePath.value}#work` },
+  { label: t('nav.projects'), href: `${homePath.value}#projects` },
+  { label: t('nav.services'), href: `${homePath.value}#services` },
+  { label: t('nav.process'), href: `${homePath.value}#process` },
+  { label: t('nav.pricing'), href: localePath('/pricing') },
+  { label: t('nav.faq'), href: `${homePath.value}#faq` },
 ])
 
 function close() { menuOpen.value = false }
@@ -63,7 +73,7 @@ function onLocaleSwitch() { rememberAnchor(); close() }
 <template>
   <nav :class="['nav', scrolled && 'nav--scrolled']" aria-label="Main navigation">
     <div class="nav__inner wrap">
-      <a href="#" class="nav__logo" @click="close">
+      <a :href="homePath" class="nav__logo" @click="close">
         <span class="serif">Omar</span> Bougma
       </a>
 
@@ -99,7 +109,7 @@ function onLocaleSwitch() { rememberAnchor(); close() }
           </NuxtLink>
         </div>
 
-        <a href="#contact" class="btn btn-primary nav__cta" @click="close">
+        <a :href="`${homePath}#contact`" class="btn btn-primary nav__cta" @click="close">
           {{ t('nav.cta') }}
         </a>
 

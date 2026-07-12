@@ -2,6 +2,9 @@
 defineProps({ id: String })
 const { t } = useI18n()
 
+const introItems = computed(() =>
+  [0, 1, 2].map(i => t(`work.introList[${i}]`))
+)
 const highlights = computed(() =>
   [0, 1, 2].map(i => ({
     label: t(`work.highlights[${i}].label`),
@@ -36,6 +39,21 @@ const skills = computed(() =>
 
         <div class="exp-detail">
           <p v-reveal class="exp-detail__intro serif">{{ t('work.intro') }}</p>
+
+          <ol class="exp-intro-list" role="list">
+            <li
+              v-for="(item, i) in introItems"
+              :key="i"
+              v-reveal
+              :class="`reveal-d${i + 1}`"
+              class="exp-intro-list__item"
+            >
+              <span class="exp-intro-list__num serif" aria-hidden="true">{{ String(i + 1).padStart(2, '0') }}</span>
+              <span class="exp-intro-list__text serif">{{ item }}</span>
+            </li>
+          </ol>
+
+          <p v-reveal class="exp-detail__intro-outro">{{ t('work.introOutro') }}</p>
 
           <ul class="exp-highlights" role="list">
             <li
@@ -134,6 +152,43 @@ const skills = computed(() =>
   max-width: 44ch;
 }
 [dir="rtl"] .exp-detail__intro { font-style: normal; font-weight: 600; }
+
+.exp-intro-list {
+  margin-top: clamp(18px, 3vw, 26px);
+  display: flex;
+  flex-direction: column;
+}
+.exp-intro-list__item {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 13px 0;
+  border-bottom: 1px solid #DCE1D7;
+}
+.exp-intro-list__item:first-child { border-top: 1px solid #DCE1D7; }
+.exp-intro-list__num {
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--honey);
+  letter-spacing: 0.08em;
+}
+.exp-intro-list__text {
+  font-size: clamp(1.05rem, 1.8vw, 1.28rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--pine);
+  line-height: 1.4;
+}
+[dir="rtl"] .exp-intro-list__text { font-style: normal; font-weight: 600; }
+
+.exp-detail__intro-outro {
+  margin-top: clamp(18px, 3vw, 26px);
+  font-size: 0.96rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  max-width: 54ch;
+}
 
 .exp-highlights {
   margin-top: clamp(28px, 4vw, 40px);

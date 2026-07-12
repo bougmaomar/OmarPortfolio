@@ -1,7 +1,9 @@
 {
   "seo": {
-    "title": "Développeur web au Maroc — création & maintenance de sites | Omar Bougma",
-    "description": "Création de site web à Marrakech et partout au Maroc : sites, applications, automatisation, hébergement et maintenance. Développeur web — devis fixes, langage clair, et un site qui vous appartient."
+    "title": "Développeur web au Maroc - création & maintenance de sites {'|'} Omar Bougma",
+    "description": "Création de site web à Marrakech et partout au Maroc : sites, applications, automatisation, hébergement et maintenance. Développeur web : devis fixes, langage clair, et un site qui vous appartient.",
+    "jobTitle": "Développeur logiciel",
+    "knowsAbout": ["Développement logiciel", "Développement web", "DevOps", "Sécurité", "Automatisation", "Outils internes"]
   },
   "nav": {
     "about": "Pourquoi",
@@ -9,6 +11,7 @@
     "projects": "Projets",
     "services": "Services",
     "process": "Méthode",
+    "pricing": "Tarifs",
     "faq": "FAQ",
     "cta": "Discutons"
   },
@@ -16,7 +19,7 @@
     "eyebrow": "Développeur logiciel · Marrakech",
     "heading": "Je crée des sites et des outils qui apportent plus de clients aux petites entreprises et",
     "headingEm": "moins de tâches ingrates",
-    "sub": "De l'expérience à construire et faire tourner de vrais logiciels depuis 2022 — aujourd'hui au service des petites entreprises partout au Maroc, sans jargon. Basé à Marrakech.",
+    "sub": "De l'expérience à construire et faire tourner de vrais logiciels depuis 2022. Aujourd'hui au service des petites entreprises partout au Maroc, basé à Marrakech.",
     "cta1": "Voir mon expérience",
     "cta2": "Démarrer une conversation"
   },
@@ -28,8 +31,8 @@
   "about": {
     "eyebrow": "Pourquoi je le fais",
     "heading": "La vraie raison derrière tout ça.",
-    "body": "Je veux qu'un commerçant passe ses soirées en famille plutôt qu'à se battre avec des tableurs. La plupart des petites entreprises font déjà du bon travail — elles perdent juste des heures avec des outils pénibles, et des clients qui ne les trouvent pas. Je crée les sites et les outils qui suppriment ces frictions, pour que vous gagniez plus de bons clients et plus de temps. C'est toute la raison de mon travail.",
-    "signature": "— Omar",
+    "body": "Je veux qu'un commerçant passe ses soirées en famille plutôt qu'à se battre avec des tableurs. La plupart des petites entreprises font déjà du bon travail, elles perdent juste des heures avec des outils pénibles, et des clients qui ne les trouvent pas. Je crée les sites et les outils qui suppriment ces frictions, pour que vous gagniez plus de bons clients et plus de temps. C'est toute la raison de mon travail.",
+    "signature": "Omar",
     "photoAlt": "Omar Bougma",
     "photoPlaceholder": "Votre photo ici"
   },
@@ -38,22 +41,24 @@
     "title": "Construire et faire tourner de vrais systèmes.",
     "duration": "Depuis 2022",
     "role": "Développement · DevOps · Sécurité",
-    "intro": "Depuis 2022, je travaille sur trois fronts à la fois — écrire le logiciel, gérer l'infrastructure sur laquelle il tourne, et le garder sécurisé. Je prends les problèmes en charge de la première idée jusqu'à la production, et j'ai appris comment les systèmes survivent vraiment au contact des utilisateurs réels.",
+    "intro": "Depuis 2022, je travaille sur trois fronts à la fois :",
+    "introList": ["Écrire le logiciel", "Gérer l'infrastructure sur laquelle il tourne", "Le garder sécurisé"],
+    "introOutro": "Je prends les problèmes en charge de la première idée jusqu'à la production, et j'ai appris comment les systèmes survivent vraiment au contact des utilisateurs réels.",
     "highlights": [
       {
         "label": "Construire le produit",
-        "desc": "Développement full-stack de bout en bout — frontend, backend, et les données entre les deux, conçus comme un tout connecté.",
-        "metric": "Chiffre à venir — ex. [N] fonctionnalités livrées sur [N] apps en production."
+        "desc": "Développement full-stack de bout en bout : frontend, backend, et les données entre les deux, conçus comme un tout connecté.",
+        "metric": "Chiffre à venir, ex. [N] fonctionnalités livrées sur [N] apps en production."
       },
       {
         "label": "Gérer l'infrastructure",
-        "desc": "DevOps du déploiement au monitoring — mettre les fonctionnalités en production de façon fiable et les maintenir tandis que les gens en dépendaient chaque jour.",
-        "metric": "Chiffre à venir — ex. [N]% de disponibilité · [N] déploiements/semaine."
+        "desc": "DevOps du déploiement au monitoring : mettre les fonctionnalités en production de façon fiable et les maintenir tandis que les gens en dépendaient chaque jour.",
+        "metric": "Chiffre à venir, ex. [N]% de disponibilité · [N] déploiements/semaine."
       },
       {
         "label": "Assurer la sécurité",
-        "desc": "La sécurité traitée comme partie intégrante de la construction, pas un ajout — durcir ce qu'on livrait face aux risques réels.",
-        "metric": "Chiffre à venir — ex. [N] vulnérabilités corrigées · zéro faille."
+        "desc": "La sécurité traitée comme partie intégrante de la construction, pas un ajout : durcir ce qu'on livrait face aux risques réels.",
+        "metric": "Chiffre à venir, ex. [N] vulnérabilités corrigées · zéro faille."
       }
     ],
     "skillsLabel": "Mes domaines",
@@ -64,15 +69,15 @@
     "eyebrow": "Ce que je construis",
     "heading1": "Le bon médium",
     "heading2": "pour le vrai problème.",
-    "sub": "Je ne commence pas avec une pile technologique. Je pars de ce que vous voulez accomplir et je choisis ce qui a le plus de sens — souvent plus simple que vous ne le pensez.",
+    "sub": "Je ne commence pas avec une pile technologique. Je pars de ce que vous voulez accomplir et je choisis ce qui a le plus de sens, souvent plus simple que vous ne le pensez.",
     "items": [
-      { "title": "Sites & Applications Web", "desc": "Des pages d'atterrissage aux plateformes complètes — conçus pour convertir, durer, et vous appartenir après mon départ." },
-      { "title": "Systèmes Internes", "desc": "Tableaux de bord, outils et workflows que votre équipe utilisera vraiment — conçus autour de votre façon de penser." },
+      { "title": "Sites & Applications Web", "desc": "Des pages d'atterrissage aux plateformes complètes, conçus pour convertir, durer, et vous appartenir après mon départ." },
+      { "title": "Systèmes Internes", "desc": "Tableaux de bord, outils et workflows que votre équipe utilisera vraiment, conçus autour de votre façon de penser." },
       { "title": "Automatisation", "desc": "Supprimez les tâches répétitives. Libérez vos équipes pour le travail qui nécessite vraiment un humain." },
-      { "title": "Hébergement, Maintenance & Sécurité", "desc": "Je le garde en marche — hébergement, mises à jour, sauvegardes et sécurité, chaque mois. Pas de disparition après le lancement." }
+      { "title": "Hébergement, Maintenance & Sécurité", "desc": "Je le garde en marche : hébergement, mises à jour, sauvegardes et sécurité, chaque mois. Pas de disparition après le lancement." }
     ],
     "tiersLabel": "Forfaits mensuels",
-    "tiersNote": "Les noms et prix des forfaits sont des espaces réservés — tarifs définitifs à fixer.",
+    "tiersNote": "Les noms et prix des forfaits sont des espaces réservés. Tarifs définitifs à fixer.",
     "tiers": [
       { "name": "Basic", "desc": "Hébergement, mises à jour & sauvegardes", "price": "[prix] / mois" },
       { "name": "Standard", "desc": "Tout le Basic, plus surveillance & corrections prioritaires", "price": "[prix] / mois" },
@@ -85,18 +90,18 @@
     "heading2": "Tenus à chaque fois.",
     "principles": [
       "Ce n'est pas à propos de moi. Je pars de votre monde, pas de ma liste de compétences.",
-      "Vous possédez tout — aucun verrouillage, aucun jargon, un langage clair tout au long.",
+      "Vous possédez tout : aucun verrouillage, aucun jargon, un langage clair tout au long.",
       "Je suis mesuré sur vos résultats, pas sur mon ingéniosité.",
       "Travail honnête, pour des entreprises honnêtes, uniquement.",
       "Je construis des choses que vous pouvez encore gérer après mon départ."
     ],
-    "audit": "Vous avez peut-être déjà embauché un développeur qui a disparu à mi-chemin, surfacturé, ou vous a laissé avec quelque chose que seul lui pouvait modifier. <strong>C'est exactement pourquoi je travaille ainsi — dit clairement, pour que cela ne surprenne aucun de nous.</strong>"
+    "audit": "Vous avez peut-être déjà embauché un développeur qui a disparu à mi-chemin, surfacturé, ou vous a laissé avec quelque chose que seul lui pouvait modifier. <strong>C'est exactement pourquoi je travaille ainsi, dit clairement, pour que cela ne surprenne aucun de nous.</strong>"
   },
   "contact": {
     "eyebrow": "Parlons",
     "heading1": "Prêt à développer",
     "heading2": "votre impact ?",
-    "sub": "Je commence chaque conversation de la même façon — en comprenant votre monde avant de parler du mien.",
+    "sub": "Je commence chaque conversation de la même façon : en comprenant votre monde avant de parler du mien.",
     "cta": "Démarrer la conversation",
     "orEmail": "Ou écrivez-moi directement à",
     "orWhatsapp": "Ou contactez-moi sur WhatsApp au",
@@ -108,50 +113,50 @@
       "Quelle est la partie la plus difficile de gérer cela au quotidien ?",
       "Que faudrait-il changer pour que cela en vaille la peine pour vous ?"
     ],
-    "tip": "Je continuerai à résumer votre monde jusqu'à ce que vous disiez <strong>« c'est ça »</strong>. Laissez « non » rester sans risque — c'est tout le principe.",
+    "tip": "Je continuerai à résumer votre monde jusqu'à ce que vous disiez <strong>« c'est ça »</strong>. Laissez « non » rester sans risque. C'est tout le principe.",
     "closingNote": "« Commencez par le pourquoi. Le quoi s'en occupera. »",
     "location": "Marrakech, Maroc"
   },
   "projects": {
     "eyebrow": "Travaux sélectionnés",
     "title": "Ce que j'ai construit.",
-    "intro": "Quelques projets — le problème, ce que j'ai construit, et où en est chacun aujourd'hui.",
+    "intro": "Quelques projets : le problème, ce que j'ai construit, et où en est chacun aujourd'hui.",
     "imagePlaceholder": "Capture d'écran à venir",
     "maintenanceLink": "→ Le garder en marche après le lancement",
     "visit": "Voir le site →",
     "items": [
       {
-        "name": "BlueSky — SaaS de comptabilité & budgétisation",
+        "name": "BlueSky - SaaS de comptabilité & budgétisation",
         "tag": "SaaS financier · réalisé chez un ancien employeur",
-        "problem": "Les entreprises ont besoin d'un seul endroit pour gérer leurs opérations financières, la budgétisation et la planification stratégique — avec une vision prospective de leur santé financière.",
-        "built": "BlueSky — un SaaS tout-en-un de comptabilité et de planification budgétaire, couvrant revenus, dépenses, actifs, passifs et plus, du suivi quotidien aux projections à haut niveau.",
+        "problem": "Les entreprises ont besoin d'un seul endroit pour gérer leurs opérations financières, la budgétisation et la planification stratégique, avec une vision prospective de leur santé financière.",
+        "built": "BlueSky : un SaaS tout-en-un de comptabilité et de planification budgétaire, couvrant revenus, dépenses, actifs, passifs et plus, du suivi quotidien aux projections à haut niveau.",
         "tech": "Un SaaS full-stack avec des analyses pilotées par l'IA qui transforment les données historiques en prévisions de santé financière.",
         "outcome": "Construit et utilisé en production chez un ancien employeur.",
         "note": ""
       },
       {
-        "name": "MeinLedger — suivi de finances personnelles",
+        "name": "MeinLedger - suivi de finances personnelles",
         "tag": "Projet solo · terminé",
         "problem": "Les gens veulent suivre leurs finances de façon claire et simple, sans application surchargée.",
-        "built": "Conçu, construit et exploité — valeur nette, trésorerie, dépenses par catégorie, comptes, objectifs et abonnements.",
-        "tech": "Une application web full-stack, de la base de données à l'interface, déployée et maintenue de bout en bout — entièrement en solo.",
+        "built": "Conçu, construit et exploité : valeur nette, trésorerie, dépenses par catégorie, comptes, objectifs et abonnements.",
+        "tech": "Une application web full-stack, de la base de données à l'interface, déployée et maintenue de bout en bout, entièrement en solo.",
         "outcome": "Un produit terminé que j'ai conçu, livré et exploité moi-même.",
         "note": ""
       },
       {
-        "name": "Fintbib — plateforme de gestion de cabinet médical",
+        "name": "Fintbib - plateforme de gestion de cabinet médical",
         "tag": "Cabinets médicaux · en développement",
-        "problem": "Les cabinets avaient besoin d'un seul endroit pour gérer tout le côté patient — pas seulement les dossiers, mais aussi les visites, les rendez-vous et les documents.",
-        "built": "Une plateforme de gestion de cabinet — profils et historique patients, visites et diagnostics, rendez-vous, gestion des documents et assurance, le tout en un seul endroit.",
+        "problem": "Les cabinets avaient besoin d'un seul endroit pour gérer tout le côté patient : pas seulement les dossiers, mais aussi les visites, les rendez-vous et les documents.",
+        "built": "Une plateforme de gestion de cabinet : profils et historique patients, visites et diagnostics, rendez-vous, gestion des documents et assurance, le tout en un seul endroit.",
         "tech": "Une application web full-stack, conçue priorité à la confidentialité et à la conformité, pour les établissements médicaux.",
         "outcome": "En développement, en attente d'approbation réglementaire avant de traiter de vraies données patients.",
         "note": "Affiché avec des données fictives uniquement."
       },
       {
-        "name": "Abdellah Bougma — portfolio d'artisan",
+        "name": "Abdellah Bougma - portfolio d'artisan",
         "tag": "Projet client",
         "problem": "Un artisan marocain avait besoin d'un espace en ligne élégant pour son art et sa galerie.",
-        "built": "Un site portfolio — son histoire, sa démarche et une galerie de ses œuvres — conçu autour de son goût.",
+        "built": "Un site portfolio avec son histoire, sa démarche et une galerie de ses œuvres, conçu autour de son goût.",
         "tech": "Un site sur mesure, conçu et construit pour correspondre à son style.",
         "outcome": "Livré pour un vrai client.",
         "note": ""
@@ -161,17 +166,66 @@
   "testimonials": {
     "eyebrow": "Témoignages",
     "title": "Ce que disent les clients.",
-    "comingSoon": "Les témoignages clients arriveront bientôt ici — les premiers sont en route."
+    "comingSoon": "Les témoignages clients arriveront bientôt ici. Les premiers sont en route."
+  },
+  "pricing": {
+    "seoTitle": "Tarifs - Sites web & applications au Maroc {'|'} Omar Bougma",
+    "seoDescription": "Des prix clairs et fixes en dirhams marocains : page d'atterrissage dès 1 500 DH, site vitrine dès 4 000 DH, site sur mesure dès 5 000 DH, et forfaits mensuels dès 150 DH.",
+    "eyebrow": "Tarifs",
+    "title": "Des prix clairs. Sans surprise.",
+    "sub": "Chaque projet commence par un devis fixe et écrit. Voici des points de départ honnêtes, en dirhams marocains, pour que vous sachiez à quoi vous attendre avant même qu'on se parle.",
+    "buildsLabel": "Projets ponctuels",
+    "popular": "Choix populaire",
+    "builds": [
+      {
+        "name": "Page d'atterrissage",
+        "oldPrice": "2 500 DH",
+        "price": "dès 1 500 DH",
+        "desc": "Une seule page qui présente votre activité et pousse les visiteurs à vous contacter.",
+        "features": ["Une page conçue autour de votre objectif", "Intégration WhatsApp & contact", "Rapide et pensée mobile d'abord", "2 séries de révisions incluses", "Livrée en une semaine environ"]
+      },
+      {
+        "name": "Site vitrine",
+        "oldPrice": "5 000 DH",
+        "price": "dès 4 000 DH",
+        "desc": "Un site complet pour votre entreprise : vos services, votre histoire, et la preuve de votre travail.",
+        "features": ["3 à 6 pages", "Bases SEO pour Google", "Disponible en français, arabe et anglais", "3 séries de révisions incluses", "Facile à mettre à jour après le lancement"]
+      },
+      {
+        "name": "Site sur mesure",
+        "price": "dès 5 000 DH+",
+        "priceNote": "Prix non fixe : il dépend du nombre de pages et des fonctionnalités. Vous recevez tout de même un devis fixe avant de commencer.",
+        "desc": "Un site entièrement bâti autour de vos besoins : application web, boutique en ligne, ou ce qu'aucun modèle ne permet.",
+        "features": ["Pages et fonctionnalités adaptées à vous", "Option application web ou boutique en ligne", "Formation incluse à la livraison", "Séries de révisions définies dans le devis", "Le code et les données vous appartiennent"]
+      }
+    ],
+    "customNote": "Les outils internes et l'automatisation sont chiffrés au projet. Dites-moi ce qui vous fait perdre du temps, et je vous donne un prix fixe pour l'éliminer.",
+    "plansLabel": "Forfaits mensuels",
+    "plansSub": "Après le lancement, je garde votre site rapide, sécurisé et en ligne, pour que vous n'ayez plus à y penser.",
+    "plans": [
+      { "name": "Basic", "price": "150 DH", "period": "/ mois", "features": ["Hébergement", "Mises à jour", "Sauvegardes hebdomadaires"] },
+      { "name": "Standard", "price": "300 DH", "period": "/ mois", "features": ["Tout le Basic", "Surveillance de disponibilité", "Corrections prioritaires"] },
+      { "name": "Premium", "price": "500 DH", "period": "/ mois", "features": ["Tout le Standard", "Renforcement de la sécurité", "Rapport mensuel"] }
+    ],
+    "notesLabel": "Bon à savoir",
+    "notes": [
+      "Un devis fixe par écrit avant tout travail. Le prix ne bouge pas.",
+      "Vous possédez tout : domaine, hébergement, code et contenu.",
+      "Aucun frais caché. Si un extra est nécessaire, on en parle d'abord."
+    ],
+    "ctaTitle": "Pas sûr de ce qu'il vous faut ?",
+    "ctaSub": "Parlez-moi de votre activité et je vous recommande l'option la plus simple qui fonctionne.",
+    "cta": "Démarrer la conversation"
   },
   "faq": {
     "eyebrow": "FAQ",
     "title": "Questions que vous pourriez avoir.",
     "items": [
-      { "q": "Combien coûte un site web ?", "a": "Vous obtenez un devis fixe à l'avance — sans surprise. Dites-moi ce qu'il vous faut, et je vous donne un prix clair avant tout travail." },
+      { "q": "Combien coûte un site web ?", "a": "Vous obtenez un devis fixe à l'avance, sans surprise. Dites-moi ce qu'il vous faut, et je vous donne un prix clair avant tout travail." },
       { "q": "Combien de temps ça prend ?", "a": "Généralement quelques semaines, selon l'ampleur. Je vous donne un calendrier réaliste avant de commencer." },
-      { "q": "Que dois-je préparer ?", "a": "Très peu — votre contenu et une idée de ce que vous voulez. Je guide le reste, en langage clair." },
-      { "q": "Est-ce que je possède vraiment tout ?", "a": "Oui. Chaque site, outil et compte vous appartient — code et contenu inclus. Aucun verrouillage, jamais." },
-      { "q": "Que se passe-t-il après le lancement ?", "a": "Je peux le garder en marche — hébergement, mises à jour, sauvegardes et sécurité — via un forfait mensuel. Voir Services ci-dessus." }
+      { "q": "Que dois-je préparer ?", "a": "Très peu : votre contenu et une idée de ce que vous voulez. Je guide le reste, en langage clair." },
+      { "q": "Est-ce que je possède vraiment tout ?", "a": "Oui. Chaque site, outil et compte vous appartient, code et contenu inclus. Aucun verrouillage, jamais." },
+      { "q": "Que se passe-t-il après le lancement ?", "a": "Je peux le garder en marche via un forfait mensuel : hébergement, mises à jour, sauvegardes et sécurité. Voir Services ci-dessus." }
     ]
   }
 }
