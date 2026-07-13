@@ -50,6 +50,17 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#173A33' },
         { name: 'format-detection', content: 'telephone=no' }
       ],
+      // Google Analytics (gtag.js) — loaded on every page and locale.
+      script: [
+        { src: 'https://www.googletagmanager.com/gtag/js?id=G-MWS31Q93HB', async: true },
+        {
+          innerHTML:
+            "window.dataLayer = window.dataLayer || [];" +
+            "function gtag(){dataLayer.push(arguments);}" +
+            "gtag('js', new Date());" +
+            "gtag('config', 'G-MWS31Q93HB');",
+        },
+      ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },

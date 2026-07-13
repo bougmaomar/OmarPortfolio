@@ -92,6 +92,23 @@ useHead(() => ({
         </div>
       </header>
 
+      <section class="p-consult">
+        <div class="wrap">
+          <div v-reveal class="p-consult__card">
+            <div>
+              <span class="p-consult__tag">{{ t('pricing.consult.tag') }}</span>
+              <h2 class="p-consult__title serif">{{ t('pricing.consult.title') }}</h2>
+              <p class="p-consult__desc">{{ t('pricing.consult.desc') }}</p>
+            </div>
+            <div class="p-consult__side">
+              <p class="p-consult__price serif">{{ t('pricing.consult.price') }}</p>
+              <p class="p-consult__duration">{{ t('pricing.consult.duration') }}</p>
+              <a :href="`${homePath}#contact`" class="btn btn-pine">{{ t('pricing.consult.cta') }}</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="p-builds">
         <div class="wrap">
           <p v-reveal class="eyebrow">{{ t('pricing.buildsLabel') }}</p>
@@ -189,6 +206,63 @@ useHead(() => ({
   color: #CBD8D1;
   line-height: 1.7;
 }
+
+/* ─── Free consultation ─── */
+.p-consult { padding-top: clamp(40px, 6vw, 56px); }
+.p-consult__card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: clamp(24px, 4vw, 56px);
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--honey);
+  border-radius: 14px;
+  padding: clamp(24px, 4vw, 40px);
+}
+.p-consult__tag {
+  display: inline-block;
+  background: var(--honey);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 20px;
+  line-height: 1.3;
+}
+.p-consult__title {
+  margin-top: 14px;
+  font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+  font-weight: 400;
+  color: var(--pine);
+  line-height: 1.3;
+  max-width: 32ch;
+}
+.p-consult__desc {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  max-width: 58ch;
+}
+.p-consult__side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.p-consult__price {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: 500;
+  color: var(--honey);
+  line-height: 1;
+}
+.p-consult__duration {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: var(--sage);
+}
+.p-consult__side .btn { margin-top: 16px; }
 
 /* ─── One-time projects ─── */
 .p-builds {
@@ -416,6 +490,7 @@ useHead(() => ({
 .p-cta .btn { margin-top: 22px; }
 
 @media (max-width: 860px) {
+  .p-consult__card { grid-template-columns: 1fr; }
   .p-builds__grid { grid-template-columns: 1fr; }
   .p-plans__grid { grid-template-columns: 1fr; }
   .p-notes__layout { grid-template-columns: 1fr; }
