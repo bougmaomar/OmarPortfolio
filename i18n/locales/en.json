@@ -170,7 +170,7 @@
   },
   "pricing": {
     "seoTitle": "Pricing - Websites & Apps in Morocco {'|'} Omar Bougma",
-    "seoDescription": "Clear, fixed prices in Moroccan dirhams: landing pages from 1,500 DH, business websites from 4,000 DH, custom websites from 5,000 DH, and monthly care plans from 150 DH.",
+    "seoDescription": "Clear, fixed prices in Moroccan dirhams: landing pages from 1,500 DH, business websites from 4,000 DH, custom websites from 5,000 DH, monthly care plans from 150 DH, and content updates from 50 DH.",
     "eyebrow": "Pricing",
     "title": "Clear prices. No surprises.",
     "sub": "Every project starts with a fixed, written quote. These are honest starting points in Moroccan dirhams, so you know what to expect before we even talk.",
@@ -208,18 +208,58 @@
       }
     ],
     "customNote": "Internal tools and automation are quoted per project. Tell me what eats your time, and I'll give you a fixed price for removing it.",
+    "payment": {
+      "label": "How payment works",
+      "items": [
+        { "title": "0% to start, 50% at first look, 50% at delivery", "desc": "Nothing up front. You pay half when you see the first version of your site, and the rest once it's live and you're happy with it." },
+        { "title": "Milestones for custom projects", "desc": "Bigger builds are split into steps agreed in the quote, so you pay as real progress lands." },
+        { "title": "Simple payment methods", "desc": "Bank transfer or cash, whichever is easiest for you." },
+        { "title": "An invoice, every time", "desc": "Every payment comes with a written invoice. Everything on paper, nothing vague." }
+      ]
+    },
+    "domain": {
+      "label": "Domain & hosting: what's what",
+      "items": [
+        { "title": "Your domain, in your name", "desc": "Your domain name (about 100–400 DH per year depending on the extension) is registered in your name, and you pay the registrar's real price, invoice shown. No markup, ever. I handle the technical setup." },
+        { "title": "Hosting, already covered", "desc": "Hosting is included in every care plan. No care plan? I set you up on hosting you pay for directly, and hand over full access." }
+      ],
+      "note": "Either way: if we ever part ways, your domain and your site go with you."
+    },
     "plansLabel": "Monthly care plans",
-    "plansSub": "After launch, I keep your site fast, secure, and online, so you never have to think about it.",
+    "plansSub": "After launch, a care plan keeps your site online, fast, and secure. Pure upkeep: content changes are priced per update, just below.",
     "plans": [
-      { "name": "Basic", "price": "150 DH", "period": "/ month", "features": ["Hosting", "Updates", "Weekly backups"] },
-      { "name": "Standard", "price": "300 DH", "period": "/ month", "features": ["Everything in Basic", "Uptime monitoring", "Priority fixes"] },
-      { "name": "Premium", "price": "500 DH", "period": "/ month", "features": ["Everything in Standard", "Security hardening", "Monthly report"] }
+      { "name": "Basic", "price": "150 DH", "period": "/ month", "features": ["Hosting included", "Weekly backups", "Software & security updates", "Response within 72h"] },
+      { "name": "Standard", "price": "300 DH", "period": "/ month", "features": ["Everything in Basic", "Uptime monitoring", "Priority fixes", "Response within 48h"] },
+      { "name": "Premium", "price": "500 DH", "period": "/ month", "features": ["Everything in Standard", "Security hardening", "Monthly health report", "Response within 24h"] }
     ],
+    "plansNote": "Care plan perk: 2 small content updates per month are included, free.",
+    "updates": {
+      "label": "Content updates",
+      "sub": "Pay per change, no subscription. You know the price before anything is touched.",
+      "items": [
+        { "name": "Content update", "desc": "A text change, a new price, a photo swap — up to a new section, a gallery, or a menu overhaul.", "price": "from 50 DH", "time": "small changes done within 48h" },
+        { "name": "New page", "desc": "A full new page, designed to match the rest of your site.", "price": "from 300 DH", "time": "" }
+      ],
+      "note": "Not sure which one yours is? I'll tell you the price before touching anything.",
+      "noteCta": "Send it on WhatsApp"
+    },
+    "seo": {
+      "label": "Getting found on Google",
+      "launchTitle": "At launch: included",
+      "launchDesc": "Business and custom sites ship with SEO foundations built in: clean structure, fast loading, Google indexing, and your Google Business Profile set up.",
+      "limit": "This is steady base SEO. For aggressive campaigns — blogs, backlinks, paid ads — I'll tell you honestly when you need a specialist.",
+      "ongoing": {
+        "name": "Ongoing SEO",
+        "price": "500 DH",
+        "period": "/ month",
+        "features": ["Monthly check of your Google rankings", "Your Google Business Profile kept up to date", "Small content and keyword adjustments", "A short monthly report showing where you stand"]
+      }
+    },
     "notesLabel": "Good to know",
     "notes": [
       "A fixed quote in writing before any work starts. The price doesn't move.",
-      "You own everything: domain, hosting, code, and content.",
-      "No hidden fees. If something extra is needed, we discuss it first."
+      "Nothing to pay up front: 50% at first look, 50% at delivery.",
+      "Everything is yours: domain, hosting, code, and content. Always."
     ],
     "ctaTitle": "Not sure what you need?",
     "ctaSub": "Tell me about your business and I'll recommend the simplest option that works.",

@@ -3,6 +3,7 @@ const { locale, locales, t } = useI18n()
 const localePath = useLocalePath()
 const config = useRuntimeConfig()
 
+const WHATSAPP = '212629071889'
 const siteUrl = String(config.public.siteUrl || '').replace(/\/$/, '')
 const ogImage = siteUrl + '/og-image.jpg'
 const ogLocale = { en: 'en_US', fr: 'fr_FR', ar: 'ar_MA' }
@@ -31,13 +32,41 @@ const builds = computed(() =>
   }))
 )
 
+const payment = computed(() =>
+  [0, 1, 2, 3].map(i => ({
+    title: t(`pricing.payment.items[${i}].title`),
+    desc: t(`pricing.payment.items[${i}].desc`),
+  }))
+)
+
+const domainItems = computed(() =>
+  [0, 1].map(i => ({
+    title: t(`pricing.domain.items[${i}].title`),
+    desc: t(`pricing.domain.items[${i}].desc`),
+  }))
+)
+
 const plans = computed(() =>
   [0, 1, 2].map(i => ({
     name: t(`pricing.plans[${i}].name`),
     price: t(`pricing.plans[${i}].price`),
     period: t(`pricing.plans[${i}].period`),
-    features: [0, 1, 2].map(j => t(`pricing.plans[${i}].features[${j}]`)),
+    features: [0, 1, 2, 3].map(j => t(`pricing.plans[${i}].features[${j}]`)),
   }))
+)
+
+const updates = computed(() =>
+  [0, 1].map(i => ({
+    name: t(`pricing.updates.items[${i}].name`),
+    desc: t(`pricing.updates.items[${i}].desc`),
+    price: t(`pricing.updates.items[${i}].price`),
+    // Only the content update carries a turnaround promise.
+    time: i === 0 ? t(`pricing.updates.items[${i}].time`) : '',
+  }))
+)
+
+const seoFeatures = computed(() =>
+  [0, 1, 2, 3].map(i => t(`pricing.seo.ongoing.features[${i}]`))
 )
 
 const notes = computed(() => [0, 1, 2].map(i => t(`pricing.notes[${i}]`)))
@@ -137,6 +166,43 @@ useHead(() => ({
         </div>
       </section>
 
+      <section class="p-pay">
+        <div class="wrap">
+          <p v-reveal class="eyebrow">{{ t('pricing.payment.label') }}</p>
+          <div class="p-pay__grid">
+            <article
+              v-for="(item, i) in payment"
+              :key="i"
+              v-reveal
+              :class="`reveal-d${i + 1}`"
+              class="p-pay__card"
+            >
+              <h2 class="p-pay__title">{{ item.title }}</h2>
+              <p class="p-pay__desc">{{ item.desc }}</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-domain">
+        <div class="wrap">
+          <p v-reveal class="eyebrow">{{ t('pricing.domain.label') }}</p>
+          <div class="p-domain__grid">
+            <article
+              v-for="(item, i) in domainItems"
+              :key="i"
+              v-reveal
+              :class="`reveal-d${i + 1}`"
+              class="p-domain__card"
+            >
+              <h2 class="p-domain__title">{{ item.title }}</h2>
+              <p class="p-domain__desc">{{ item.desc }}</p>
+            </article>
+          </div>
+          <p v-reveal class="p-strip p-domain__note">{{ t('pricing.domain.note') }}</p>
+        </div>
+      </section>
+
       <section class="p-plans">
         <div class="wrap">
           <p v-reveal class="eyebrow p-plans__eyebrow">{{ t('pricing.plansLabel') }}</p>
@@ -155,6 +221,64 @@ useHead(() => ({
               </p>
               <ul class="p-plan__features" role="list">
                 <li v-for="(f, j) in p.features" :key="j">{{ f }}</li>
+              </ul>
+            </article>
+          </div>
+          <p v-reveal class="p-plans__note">{{ t('pricing.plansNote') }}</p>
+        </div>
+      </section>
+
+      <section class="p-updates">
+        <div class="wrap">
+          <p v-reveal class="eyebrow">{{ t('pricing.updates.label') }}</p>
+          <p v-reveal class="p-updates__sub">{{ t('pricing.updates.sub') }}</p>
+          <ul class="p-updates__list" role="list">
+            <li
+              v-for="(u, i) in updates"
+              :key="i"
+              v-reveal
+              :class="`reveal-d${i + 1}`"
+              class="p-updates__row"
+            >
+              <div>
+                <h2 class="p-updates__name">{{ u.name }}</h2>
+                <p class="p-updates__desc">{{ u.desc }}</p>
+              </div>
+              <div class="p-updates__side">
+                <p class="p-updates__price serif">{{ u.price }}</p>
+                <p v-if="u.time" class="p-updates__time">{{ u.time }}</p>
+              </div>
+            </li>
+          </ul>
+          <p v-reveal class="p-strip">
+            {{ t('pricing.updates.note') }}
+            <a
+              :href="`https://wa.me/${WHATSAPP}`"
+              target="_blank"
+              rel="noopener"
+              class="p-strip__link"
+            >{{ t('pricing.updates.noteCta') }}</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="p-seo">
+        <div class="wrap">
+          <p v-reveal class="eyebrow">{{ t('pricing.seo.label') }}</p>
+          <div class="p-seo__layout">
+            <div v-reveal>
+              <h2 class="p-seo__launch-title serif">{{ t('pricing.seo.launchTitle') }}</h2>
+              <p class="p-seo__launch-desc">{{ t('pricing.seo.launchDesc') }}</p>
+              <p class="p-strip">{{ t('pricing.seo.limit') }}</p>
+            </div>
+            <article v-reveal class="p-card p-card--featured p-seo__card reveal-d2">
+              <h2 class="p-card__name">{{ t('pricing.seo.ongoing.name') }}</h2>
+              <p class="p-card__price serif">
+                {{ t('pricing.seo.ongoing.price') }}
+                <span class="p-card__period">{{ t('pricing.seo.ongoing.period') }}</span>
+              </p>
+              <ul class="p-card__features" role="list">
+                <li v-for="(f, i) in seoFeatures" :key="i">{{ f }}</li>
               </ul>
             </article>
           </div>
@@ -369,6 +493,82 @@ useHead(() => ({
   border-radius: 8px 0 0 8px;
 }
 
+/* ─── Shared note strip ─── */
+.p-strip {
+  margin-top: clamp(24px, 4vw, 32px);
+  padding: 18px 22px;
+  border-inline-start: 3px solid var(--honey);
+  background: var(--paper-2);
+  border-radius: 8px;
+  font-size: 0.96rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  max-width: 62ch;
+}
+.p-strip__link {
+  color: var(--pine);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ─── How payment works ─── */
+.p-pay { padding: clamp(56px, 9vw, 88px) 0; }
+.p-pay__grid {
+  margin-top: clamp(24px, 4vw, 36px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(16px, 2.5vw, 24px);
+}
+.p-pay__card {
+  background: #fff;
+  border: 1px solid #DCE1D7;
+  border-radius: 14px;
+  padding: clamp(20px, 2.5vw, 26px);
+}
+.p-pay__title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+}
+.p-pay__desc {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+/* ─── Domain & hosting ─── */
+.p-domain {
+  background: var(--paper-2);
+  padding: clamp(56px, 9vw, 88px) 0;
+}
+.p-domain__grid {
+  margin-top: clamp(24px, 4vw, 36px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(16px, 2.5vw, 24px);
+}
+.p-domain__card {
+  background: #fff;
+  border: 1px solid #DCE1D7;
+  border-radius: 14px;
+  padding: clamp(24px, 3vw, 32px);
+}
+.p-domain__title {
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.p-domain__desc {
+  margin-top: 10px;
+  font-size: 0.93rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+.p-domain__note { background: #fff; }
+
 /* ─── Monthly plans ─── */
 .p-plans {
   background: var(--pine);
@@ -438,6 +638,95 @@ useHead(() => ({
   font-weight: 700;
   font-size: 0.85rem;
 }
+.p-plans__note {
+  margin-top: clamp(24px, 4vw, 32px);
+  padding: 16px 20px;
+  border-inline-start: 3px solid var(--honey-soft);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  font-size: 0.94rem;
+  color: #CBD8D1;
+  line-height: 1.6;
+  max-width: 62ch;
+}
+
+/* ─── Content updates ─── */
+.p-updates {
+  padding: clamp(56px, 9vw, 88px) 0;
+  border-bottom: 1px solid #DCE1D7;
+}
+.p-updates__sub {
+  margin-top: 12px;
+  max-width: 52ch;
+  font-size: 0.98rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+.p-updates__list {
+  margin-top: clamp(20px, 3vw, 28px);
+  border-top: 1px solid #DCE1D7;
+}
+.p-updates__row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 24px;
+  align-items: center;
+  padding: 20px 4px;
+  border-bottom: 1px solid #DCE1D7;
+}
+.p-updates__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.p-updates__desc {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+.p-updates__side { text-align: end; }
+.p-updates__price {
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 500;
+  color: var(--honey);
+  line-height: 1.1;
+}
+.p-updates__time {
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: var(--sage);
+}
+
+/* ─── SEO ─── */
+.p-seo { padding: clamp(56px, 9vw, 88px) 0; }
+.p-seo__layout {
+  margin-top: clamp(24px, 4vw, 36px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 6vw, 72px);
+  align-items: start;
+}
+.p-seo__launch-title {
+  font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+  font-weight: 400;
+  color: var(--pine);
+  line-height: 1.3;
+}
+.p-seo__launch-desc {
+  margin-top: 12px;
+  font-size: 0.96rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  max-width: 52ch;
+}
+.p-card__period {
+  font-size: 0.85rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: var(--sage);
+}
+[dir="rtl"] .p-card__period { font-family: 'Cairo', sans-serif; }
 
 /* ─── Notes + CTA ─── */
 .p-notes {
@@ -489,10 +778,17 @@ useHead(() => ({
 }
 .p-cta .btn { margin-top: 22px; }
 
+@media (max-width: 1100px) {
+  .p-pay__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 860px) {
   .p-consult__card { grid-template-columns: 1fr; }
   .p-builds__grid { grid-template-columns: 1fr; }
+  .p-pay__grid { grid-template-columns: 1fr; }
+  .p-domain__grid { grid-template-columns: 1fr; }
   .p-plans__grid { grid-template-columns: 1fr; }
+  .p-seo__layout { grid-template-columns: 1fr; }
   .p-notes__layout { grid-template-columns: 1fr; }
 }
 </style>

@@ -170,7 +170,7 @@
   },
   "pricing": {
     "seoTitle": "Tarifs - Sites web & applications au Maroc {'|'} Omar Bougma",
-    "seoDescription": "Des prix clairs et fixes en dirhams marocains : page d'atterrissage dès 1 500 DH, site vitrine dès 4 000 DH, site sur mesure dès 5 000 DH, et forfaits mensuels dès 150 DH.",
+    "seoDescription": "Des prix clairs et fixes en dirhams marocains : page d'atterrissage dès 1 500 DH, site vitrine dès 4 000 DH, site sur mesure dès 5 000 DH, forfaits mensuels dès 150 DH, et mises à jour de contenu dès 50 DH.",
     "eyebrow": "Tarifs",
     "title": "Des prix clairs. Sans surprise.",
     "sub": "Chaque projet commence par un devis fixe et écrit. Voici des points de départ honnêtes, en dirhams marocains, pour que vous sachiez à quoi vous attendre avant même qu'on se parle.",
@@ -208,18 +208,58 @@
       }
     ],
     "customNote": "Les outils internes et l'automatisation sont chiffrés au projet. Dites-moi ce qui vous fait perdre du temps, et je vous donne un prix fixe pour l'éliminer.",
+    "payment": {
+      "label": "Comment se passe le paiement",
+      "items": [
+        { "title": "0 % au départ, 50 % au premier aperçu, 50 % à la livraison", "desc": "Rien à payer pour commencer. Vous payez la moitié quand vous voyez la première version de votre site, et le reste quand il est en ligne et vous convient." },
+        { "title": "Des jalons pour le sur mesure", "desc": "Les grands projets sont découpés en étapes définies dans le devis : vous payez au fil des avancées concrètes." },
+        { "title": "Des moyens de paiement simples", "desc": "Virement bancaire ou espèces, selon ce qui vous arrange." },
+        { "title": "Une facture, à chaque fois", "desc": "Chaque paiement s'accompagne d'une facture écrite. Tout est sur papier, rien de flou." }
+      ]
+    },
+    "domain": {
+      "label": "Domaine & hébergement : qui paie quoi",
+      "items": [
+        { "title": "Votre domaine, à votre nom", "desc": "Votre nom de domaine (environ 100 à 400 DH par an selon l'extension) est enregistré à votre nom, et vous payez le prix réel du registrar, facture à l'appui. Aucune marge cachée, jamais. Je m'occupe de la partie technique." },
+        { "title": "L'hébergement, déjà couvert", "desc": "L'hébergement est inclus dans chaque forfait mensuel. Pas de forfait ? Je vous installe sur un hébergement que vous payez directement, avec remise de tous les accès." }
+      ],
+      "note": "Dans tous les cas : si nos chemins se séparent un jour, votre domaine et votre site partent avec vous."
+    },
     "plansLabel": "Forfaits mensuels",
-    "plansSub": "Après le lancement, je garde votre site rapide, sécurisé et en ligne, pour que vous n'ayez plus à y penser.",
+    "plansSub": "Après le lancement, un forfait garde votre site en ligne, rapide et sécurisé. De l'entretien pur : les changements de contenu sont facturés à la modification, juste en dessous.",
     "plans": [
-      { "name": "Basic", "price": "150 DH", "period": "/ mois", "features": ["Hébergement", "Mises à jour", "Sauvegardes hebdomadaires"] },
-      { "name": "Standard", "price": "300 DH", "period": "/ mois", "features": ["Tout le Basic", "Surveillance de disponibilité", "Corrections prioritaires"] },
-      { "name": "Premium", "price": "500 DH", "period": "/ mois", "features": ["Tout le Standard", "Renforcement de la sécurité", "Rapport mensuel"] }
+      { "name": "Basic", "price": "150 DH", "period": "/ mois", "features": ["Hébergement inclus", "Sauvegardes hebdomadaires", "Mises à jour logicielles et de sécurité", "Réponse sous 72 h"] },
+      { "name": "Standard", "price": "300 DH", "period": "/ mois", "features": ["Tout le Basic", "Surveillance de disponibilité", "Corrections prioritaires", "Réponse sous 48 h"] },
+      { "name": "Premium", "price": "500 DH", "period": "/ mois", "features": ["Tout le Standard", "Renforcement de la sécurité", "Rapport mensuel de santé", "Réponse sous 24 h"] }
     ],
+    "plansNote": "Avantage forfait : 2 petites mises à jour de contenu par mois sont incluses, gratuitement.",
+    "updates": {
+      "label": "Mises à jour de contenu",
+      "sub": "Payez à la modification, sans abonnement. Vous connaissez le prix avant qu'on touche à quoi que ce soit.",
+      "items": [
+        { "name": "Mise à jour de contenu", "desc": "Un texte à changer, un nouveau prix, une photo à remplacer — jusqu'à une nouvelle section, une galerie ou une refonte de menu.", "price": "dès 50 DH", "time": "petits changements faits sous 48 h" },
+        { "name": "Nouvelle page", "desc": "Une page entière, conçue dans le style du reste de votre site.", "price": "dès 300 DH", "time": "" }
+      ],
+      "note": "Pas sûr de la catégorie ? Je vous donne le prix avant d'y toucher.",
+      "noteCta": "Envoyez-la sur WhatsApp"
+    },
+    "seo": {
+      "label": "Être trouvé sur Google",
+      "launchTitle": "Au lancement : inclus",
+      "launchDesc": "Les sites vitrine et sur mesure sont livrés avec les bases SEO intégrées : structure propre, chargement rapide, indexation Google et fiche Google Business configurée.",
+      "limit": "C'est du SEO de fond, régulier et honnête. Pour les campagnes agressives — blogs, backlinks, publicité — je vous dirai franchement quand il vous faut un spécialiste.",
+      "ongoing": {
+        "name": "SEO continu",
+        "price": "500 DH",
+        "period": "/ mois",
+        "features": ["Vérification mensuelle de vos positions Google", "Fiche Google Business tenue à jour", "Petits ajustements de contenu et de mots-clés", "Un court rapport mensuel montrant où vous en êtes"]
+      }
+    },
     "notesLabel": "Bon à savoir",
     "notes": [
       "Un devis fixe par écrit avant tout travail. Le prix ne bouge pas.",
-      "Vous possédez tout : domaine, hébergement, code et contenu.",
-      "Aucun frais caché. Si un extra est nécessaire, on en parle d'abord."
+      "Rien à payer au départ : 50 % au premier aperçu, 50 % à la livraison.",
+      "Tout vous appartient : domaine, hébergement, code et contenu. Toujours."
     ],
     "ctaTitle": "Pas sûr de ce qu'il vous faut ?",
     "ctaSub": "Parlez-moi de votre activité et je vous recommande l'option la plus simple qui fonctionne.",
