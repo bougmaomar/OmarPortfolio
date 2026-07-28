@@ -28,7 +28,6 @@ const jsonLd = computed(() => ({
   knowsAbout: [0, 1, 2, 3, 4, 5].map(i => t(`seo.knowsAbout[${i}]`)),
   sameAs: [
     'https://github.com/bougmaomar',
-    // TODO: add LinkedIn profile URL
   ],
 }))
 
@@ -92,6 +91,9 @@ useHead(() => ({
       <ReframeSection />
       <LazyWorkSection id="work" hydrate-on-visible />
       <LazyProjectsSection id="projects" hydrate-on-visible />
+      <!-- TestimonialsSection is intentionally not rendered yet: no real client
+           quotes exist, and the brand refuses to ship an empty or fabricated
+           proof section. Add <LazyTestimonialsSection> here once real ones land. -->
       <LazyServicesSection id="services" hydrate-on-visible />
       <LazyProcessSection id="process" hydrate-on-visible />
       <LazyAboutSection id="about" hydrate-on-visible />

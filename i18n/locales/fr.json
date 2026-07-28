@@ -21,7 +21,8 @@
     "headingEm": "moins de tâches ingrates",
     "sub": "De l'expérience à construire et faire tourner de vrais logiciels depuis 2022. Aujourd'hui au service des petites entreprises partout au Maroc, basé à Marrakech.",
     "cta1": "Voir mon expérience",
-    "cta2": "Démarrer une conversation"
+    "cta2": "Démarrer une conversation",
+    "scroll": "Défiler"
   },
   "reframe": {
     "point1": "Devis fixes, sans surprise",
@@ -102,7 +103,10 @@
     "heading1": "Prêt à développer",
     "heading2": "votre impact ?",
     "sub": "Je commence chaque conversation de la même façon : en comprenant votre monde avant de parler du mien.",
-    "cta": "Démarrer la conversation",
+    "cta": "Écrivez-moi sur WhatsApp",
+    "ctaEmail": "Ou envoyer un email",
+    "mailSubject": "Demande de projet — mon activité",
+    "mailBody": "Bonjour Omar,\n\nVoici quelques mots sur mon activité et ce que je cherche à faire :\n\n",
     "orEmail": "Ou écrivez-moi directement à",
     "orWhatsapp": "Ou contactez-moi sur WhatsApp au",
     "whatsappAria": "Discuter avec moi sur WhatsApp",
@@ -172,6 +176,14 @@
     "seoTitle": "Tarifs - Sites web & applications au Maroc {'|'} Omar Bougma",
     "seoDescription": "Des prix clairs et fixes en dirhams marocains : page d'atterrissage dès 1 500 DH, site vitrine dès 4 000 DH, site sur mesure dès 5 000 DH, forfaits mensuels dès 150 DH, et mises à jour de contenu dès 50 DH.",
     "eyebrow": "Tarifs",
+    "jump": {
+      "builds": "Sites web",
+      "payment": "Paiement",
+      "plans": "Forfaits",
+      "updates": "Mises à jour",
+      "seo": "SEO",
+      "cta": "Réserver un appel"
+    },
     "title": "Des prix clairs. Sans surprise.",
     "sub": "Chaque projet commence par un devis fixe et écrit. Voici des points de départ honnêtes, en dirhams marocains, pour que vous sachiez à quoi vous attendre avant même qu'on se parle.",
     "consult": {

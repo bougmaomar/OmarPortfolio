@@ -73,7 +73,7 @@ const items = computed(() =>
 .services__sub {
   margin-top: 18px;
   font-size: 0.97rem;
-  color: #9FB3AB;
+  color: var(--pine-muted);
   line-height: 1.7;
   max-width: 32ch;
 }
@@ -97,7 +97,7 @@ const items = computed(() =>
 .service-item__icon { color: var(--honey); margin-bottom: 14px; width: 24px; height: 24px; }
 .service-item__icon :deep(svg) { width: 24px; height: 24px; }
 .service-item__title { font-size: 0.95rem; font-weight: 600; color: var(--paper); margin-bottom: 8px; }
-.service-item__desc { font-size: 0.88rem; color: #9FB3AB; line-height: 1.65; }
+.service-item__desc { font-size: 0.88rem; color: var(--pine-muted); line-height: 1.65; }
 
 @media (max-width: 900px) {
   .services__layout { grid-template-columns: 1fr; }

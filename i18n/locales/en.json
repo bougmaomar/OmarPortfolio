@@ -21,7 +21,8 @@
     "headingEm": "less busywork",
     "sub": "Experience building and running real software since 2022. Now helping small businesses across Morocco get results without the jargon. Based in Marrakesh.",
     "cta1": "See my experience",
-    "cta2": "Start a conversation"
+    "cta2": "Start a conversation",
+    "scroll": "Scroll"
   },
   "reframe": {
     "point1": "Fixed quotes, no surprises",
@@ -102,7 +103,10 @@
     "heading1": "Ready to grow",
     "heading2": "your impact?",
     "sub": "I start every conversation the same way: understanding your world before I say anything about mine.",
-    "cta": "Start the conversation",
+    "cta": "Message me on WhatsApp",
+    "ctaEmail": "Or send an email",
+    "mailSubject": "Project inquiry — my business",
+    "mailBody": "Hi Omar,\n\nHere's a bit about my business and what I'm trying to do:\n\n",
     "orEmail": "Or email me directly at",
     "orWhatsapp": "Or message me on WhatsApp at",
     "whatsappAria": "Chat with me on WhatsApp",
@@ -172,6 +176,14 @@
     "seoTitle": "Pricing - Websites & Apps in Morocco {'|'} Omar Bougma",
     "seoDescription": "Clear, fixed prices in Moroccan dirhams: landing pages from 1,500 DH, business websites from 4,000 DH, custom websites from 5,000 DH, monthly care plans from 150 DH, and content updates from 50 DH.",
     "eyebrow": "Pricing",
+    "jump": {
+      "builds": "Websites",
+      "payment": "Payment",
+      "plans": "Care plans",
+      "updates": "Updates",
+      "seo": "SEO",
+      "cta": "Book a call"
+    },
     "title": "Clear prices. No surprises.",
     "sub": "Every project starts with a fixed, written quote. These are honest starting points in Moroccan dirhams, so you know what to expect before we even talk.",
     "consult": {

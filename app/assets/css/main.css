@@ -9,6 +9,13 @@
   --paper-2: #E4E8DF;
   --ink: #1A241F;
   --ink-soft: #46554E;
+  --hairline: #D8DDD4;       /* 1px borders / dividers on light grounds */
+  --stone: #8A968F;          /* muted italic notes on light grounds */
+  /* Cool-green text ramp for muted copy on pine (dark) grounds. */
+  --paper-dim: #CBD8D1;      /* brightest muted text on pine */
+  --pine-muted: #9FB3AB;     /* standard muted text on pine */
+  --pine-faint: #7A9A90;     /* faint text / scroll cue on pine */
+  --pine-faintest: #5A7068;  /* faintest text on pine */
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
   --max-w: 1100px;
 }

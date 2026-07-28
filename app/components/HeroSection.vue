@@ -22,13 +22,13 @@ const { t } = useI18n()
       <p class="hero__sub">{{ t('hero.sub') }}</p>
 
       <div class="hero__actions">
-        <a href="#work" class="btn btn-primary">{{ t('hero.cta1') }}</a>
-        <a href="#contact" class="btn btn-outline">{{ t('hero.cta2') }}</a>
+        <a href="#contact" class="btn btn-primary">{{ t('hero.cta2') }}</a>
+        <a href="#work" class="btn btn-outline">{{ t('hero.cta1') }}</a>
       </div>
     </div>
 
     <div class="hero__scroll" aria-hidden="true">
-      <span>Scroll</span>
+      <span>{{ t('hero.scroll') }}</span>
       <div class="hero__scroll-line"></div>
     </div>
   </section>
@@ -105,7 +105,7 @@ const { t } = useI18n()
   margin-top: clamp(18px, 3vw, 26px);
   max-width: 52ch;
   font-size: clamp(0.98rem, 1.6vw, 1.07rem);
-  color: #CBD8D1;
+  color: var(--paper-dim);
   line-height: 1.7;
   animation: fade-up 0.9s var(--ease) 0.25s both;
 }
@@ -128,7 +128,7 @@ const { t } = useI18n()
   font-size: 0.68rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #7A9A90;
+  color: var(--pine-faint);
   animation: fade-up 0.9s var(--ease) 0.6s both;
   font-family: 'Inter', sans-serif;
 }

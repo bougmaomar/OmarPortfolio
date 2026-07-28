@@ -2,8 +2,21 @@
 defineProps({ id: String })
 const { t } = useI18n()
 
+// Media keyed by the locale item index (0 BlueSky, 1 MeinLedger, 2 Fintbib,
+// 3 Artist). Screenshots live in public/projects/; empty link = no visit link.
+const media = {
+  0: { img: '/projects/bluesky.jpeg', link: '' },
+  1: { img: '/projects/meinledger.jpeg', link: 'https://meinledger.com' },
+  2: { img: '/projects/fintbib.jpeg', link: '' },
+  3: { img: '/projects/artist.jpeg', link: 'https://abdellahbougma.com' },
+}
+
+// Display order: lead with the relatable local client case (a business like
+// the visitor's), then the solo product, then close on the production SaaS.
+const order = [3, 1, 2, 0]
+
 const items = computed(() =>
-  [0, 1, 2, 3].map(i => ({
+  order.map(i => ({
     name: t(`projects.items[${i}].name`),
     tag: t(`projects.items[${i}].tag`),
     problem: t(`projects.items[${i}].problem`),
@@ -11,21 +24,11 @@ const items = computed(() =>
     tech: t(`projects.items[${i}].tech`),
     outcome: t(`projects.items[${i}].outcome`),
     note: t(`projects.items[${i}].note`),
+    img: media[i].img,
+    link: media[i].link,
   }))
 )
-
-// Real screenshots — drop the files into public/projects/ with these names.
-const images = [
-  '/projects/bluesky.jpeg',
-  '/projects/meinledger.jpeg',
-  '/projects/fintbib.jpeg',
-  '/projects/artist.jpeg',
-]
 const failed = reactive({})
-
-// Live URLs — index matches `images` above (0 Bluesky, 1 MeinLedger, 2 Fintbib,
-// 3 Artist). Empty string = no link shown on that card.
-const links = ['', 'https://meinledger.com', '', 'https://abdellahbougma.com']
 </script>
 
 <template>
@@ -47,9 +50,11 @@ const links = ['', 'https://meinledger.com', '', 'https://abdellahbougma.com']
           <div class="case__media">
             <img
               v-if="!failed[i]"
-              :src="images[i]"
+              :src="p.img"
               :alt="p.name"
               class="case__img"
+              width="720"
+              height="450"
               loading="lazy"
               @error="failed[i] = true"
             />
@@ -65,8 +70,8 @@ const links = ['', 'https://meinledger.com', '', 'https://abdellahbougma.com']
             <p class="case__outcome">{{ p.outcome }}</p>
             <p v-if="p.note" class="case__note">{{ p.note }}</p>
             <a
-              v-if="links[i]"
-              :href="links[i]"
+              v-if="p.link"
+              :href="p.link"
               target="_blank"
               rel="noopener"
               class="case__link"
@@ -167,7 +172,7 @@ const links = ['', 'https://meinledger.com', '', 'https://abdellahbougma.com']
   margin-top: 12px;
   font-size: 0.82rem;
   font-style: italic;
-  color: #8A968F;
+  color: var(--stone);
   line-height: 1.55;
 }
 .case__link {

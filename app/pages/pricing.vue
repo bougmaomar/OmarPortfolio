@@ -121,6 +121,19 @@ useHead(() => ({
         </div>
       </header>
 
+      <nav class="p-subnav" aria-label="Jump to pricing section">
+        <div class="wrap p-subnav__inner">
+          <div class="p-subnav__links">
+            <a href="#builds">{{ t('pricing.jump.builds') }}</a>
+            <a href="#payment">{{ t('pricing.jump.payment') }}</a>
+            <a href="#plans">{{ t('pricing.jump.plans') }}</a>
+            <a href="#updates">{{ t('pricing.jump.updates') }}</a>
+            <a href="#seo">{{ t('pricing.jump.seo') }}</a>
+          </div>
+          <a :href="`${homePath}#contact`" class="p-subnav__cta">{{ t('pricing.jump.cta') }}</a>
+        </div>
+      </nav>
+
       <section class="p-consult">
         <div class="wrap">
           <div v-reveal class="p-consult__card">
@@ -138,7 +151,7 @@ useHead(() => ({
         </div>
       </section>
 
-      <section class="p-builds">
+      <section id="builds" class="p-builds">
         <div class="wrap">
           <p v-reveal class="eyebrow">{{ t('pricing.buildsLabel') }}</p>
           <div class="p-builds__grid">
@@ -166,7 +179,7 @@ useHead(() => ({
         </div>
       </section>
 
-      <section class="p-pay">
+      <section id="payment" class="p-pay">
         <div class="wrap">
           <p v-reveal class="eyebrow">{{ t('pricing.payment.label') }}</p>
           <div class="p-pay__grid">
@@ -203,7 +216,7 @@ useHead(() => ({
         </div>
       </section>
 
-      <section class="p-plans">
+      <section id="plans" class="p-plans">
         <div class="wrap">
           <p v-reveal class="eyebrow p-plans__eyebrow">{{ t('pricing.plansLabel') }}</p>
           <p v-reveal class="p-plans__sub">{{ t('pricing.plansSub') }}</p>
@@ -215,6 +228,7 @@ useHead(() => ({
               :class="[`reveal-d${i + 1}`, i === 1 && 'p-plan--featured']"
               class="p-plan"
             >
+              <span v-if="i === 1" class="p-plan__badge">{{ t('pricing.popular') }}</span>
               <h2 class="p-plan__name">{{ p.name }}</h2>
               <p class="p-plan__price serif">
                 {{ p.price }} <span class="p-plan__period">{{ p.period }}</span>
@@ -228,7 +242,7 @@ useHead(() => ({
         </div>
       </section>
 
-      <section class="p-updates">
+      <section id="updates" class="p-updates">
         <div class="wrap">
           <p v-reveal class="eyebrow">{{ t('pricing.updates.label') }}</p>
           <p v-reveal class="p-updates__sub">{{ t('pricing.updates.sub') }}</p>
@@ -262,7 +276,7 @@ useHead(() => ({
         </div>
       </section>
 
-      <section class="p-seo">
+      <section id="seo" class="p-seo">
         <div class="wrap">
           <p v-reveal class="eyebrow">{{ t('pricing.seo.label') }}</p>
           <div class="p-seo__layout">
@@ -271,7 +285,7 @@ useHead(() => ({
               <p class="p-seo__launch-desc">{{ t('pricing.seo.launchDesc') }}</p>
               <p class="p-strip">{{ t('pricing.seo.limit') }}</p>
             </div>
-            <article v-reveal class="p-card p-card--featured p-seo__card reveal-d2">
+            <article v-reveal class="p-card p-seo__card reveal-d2">
               <h2 class="p-card__name">{{ t('pricing.seo.ongoing.name') }}</h2>
               <p class="p-card__price serif">
                 {{ t('pricing.seo.ongoing.price') }}
@@ -327,9 +341,56 @@ useHead(() => ({
   margin-top: 16px;
   max-width: 52ch;
   font-size: clamp(0.98rem, 1.6vw, 1.07rem);
-  color: #CBD8D1;
+  color: var(--paper-dim);
   line-height: 1.7;
 }
+
+/* ─── Sticky in-page wayfinding (sits under the fixed main nav) ─── */
+.p-subnav {
+  position: sticky;
+  top: 68px;
+  z-index: 90;
+  background: rgba(238, 240, 234, 0.97);
+  border-bottom: 1px solid #DCE1D7;
+}
+.p-subnav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 52px;
+}
+.p-subnav__links {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 2.5vw, 26px);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.p-subnav__links::-webkit-scrollbar { display: none; }
+.p-subnav__links a {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  transition: color 0.2s var(--ease);
+}
+.p-subnav__links a:hover { color: var(--pine); }
+.p-subnav__cta {
+  flex-shrink: 0;
+  background: var(--honey);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: background 0.2s var(--ease);
+}
+.p-subnav__cta:hover { background: var(--honey-soft); }
+
+/* Anchor targets clear the fixed nav (68px) + sticky sub-nav (52px). */
+#builds, #payment, #plans, #updates, #seo { scroll-margin-top: 128px; }
 
 /* ─── Free consultation ─── */
 .p-consult { padding-top: clamp(40px, 6vw, 56px); }
@@ -345,13 +406,14 @@ useHead(() => ({
 }
 .p-consult__tag {
   display: inline-block;
-  background: var(--honey);
-  color: #fff;
+  background: transparent;
+  color: var(--honey);
+  border: 1px solid var(--honey);
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 5px 12px;
+  padding: 4px 11px;
   border-radius: 20px;
   line-height: 1.3;
 }
@@ -432,7 +494,7 @@ useHead(() => ({
   margin-top: 10px;
   font-size: clamp(1.5rem, 2.5vw, 1.9rem);
   font-weight: 500;
-  color: var(--honey);
+  color: var(--pine);
   line-height: 1.1;
 }
 .p-card__old {
@@ -472,7 +534,7 @@ useHead(() => ({
 .p-card__features li::before {
   content: '✓';
   flex-shrink: 0;
-  color: var(--honey);
+  color: var(--sage);
   font-weight: 700;
   font-size: 0.85rem;
 }
@@ -520,9 +582,10 @@ useHead(() => ({
   grid-template-columns: repeat(4, 1fr);
   gap: clamp(16px, 2.5vw, 24px);
 }
+/* Flat tinted tiles — informational, visually distinct from the white
+   bordered pricing/plan cards so the three grids don't blur together. */
 .p-pay__card {
-  background: #fff;
-  border: 1px solid #DCE1D7;
+  background: var(--paper-2);
   border-radius: 14px;
   padding: clamp(20px, 2.5vw, 26px);
 }
@@ -580,7 +643,7 @@ useHead(() => ({
   margin-top: 12px;
   max-width: 52ch;
   font-size: 0.98rem;
-  color: #CBD8D1;
+  color: var(--paper-dim);
   line-height: 1.7;
 }
 .p-plans__grid {
@@ -590,12 +653,27 @@ useHead(() => ({
   gap: clamp(16px, 2.5vw, 24px);
 }
 .p-plan {
+  position: relative;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 14px;
   padding: clamp(24px, 3vw, 32px);
 }
 .p-plan--featured { border-color: var(--honey); }
+.p-plan__badge {
+  position: absolute;
+  top: -12px;
+  inset-inline-start: clamp(24px, 3vw, 32px);
+  background: var(--honey);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 20px;
+  line-height: 1.3;
+}
 .p-plan__name {
   font-size: 0.98rem;
   font-weight: 600;
@@ -605,7 +683,7 @@ useHead(() => ({
   margin-top: 10px;
   font-size: clamp(1.6rem, 2.6vw, 2rem);
   font-weight: 500;
-  color: var(--honey-soft);
+  color: var(--paper);
   line-height: 1.1;
 }
 .p-plan__period {
@@ -634,7 +712,7 @@ useHead(() => ({
 .p-plan__features li::before {
   content: '✓';
   flex-shrink: 0;
-  color: var(--honey-soft);
+  color: rgba(238, 240, 234, 0.6);
   font-weight: 700;
   font-size: 0.85rem;
 }
@@ -645,7 +723,7 @@ useHead(() => ({
   background: rgba(255, 255, 255, 0.06);
   border-radius: 8px;
   font-size: 0.94rem;
-  color: #CBD8D1;
+  color: var(--paper-dim);
   line-height: 1.6;
   max-width: 62ch;
 }
@@ -689,7 +767,7 @@ useHead(() => ({
 .p-updates__price {
   font-size: clamp(1.2rem, 2vw, 1.45rem);
   font-weight: 500;
-  color: var(--honey);
+  color: var(--pine);
   line-height: 1.1;
 }
 .p-updates__time {
@@ -760,7 +838,7 @@ useHead(() => ({
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--honey);
+  background: var(--sage);
   transform: translateY(-1px);
 }
 .p-cta__title {

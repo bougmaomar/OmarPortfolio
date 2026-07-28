@@ -90,7 +90,7 @@ function onLocaleSwitch() { rememberAnchor(); close() }
               :class="['lang-btn', locale === loc.code && 'is-active']"
               @click="onLocaleSwitch"
             >
-              {{ loc.code.toUpperCase() }}
+              {{ loc.code === 'ar' ? 'ع' : loc.code.toUpperCase() }}
             </NuxtLink>
           </div>
         </li>
