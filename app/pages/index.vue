@@ -10,7 +10,7 @@ const currentLocale = computed(() =>
   locales.value.find(l => l.code === locale.value)
 )
 
-const pathFor = (code) => (code === 'en' ? '/' : `/${code}/`)
+const pathFor = (code) => (code === 'fr' ? '/' : `/${code}/`)
 const canonical = computed(() => siteUrl + pathFor(locale.value))
 
 const jsonLd = computed(() => ({
@@ -68,7 +68,7 @@ useHead(() => ({
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
     { property: 'og:image:alt', content: t('seo.title') },
-    { property: 'og:locale', content: ogLocale[locale.value] || 'en_US' },
+    { property: 'og:locale', content: ogLocale[locale.value] || 'fr_FR' },
     ...locales.value
       .filter(l => l.code !== locale.value)
       .map(l => ({ property: 'og:locale:alternate', content: ogLocale[l.code] })),

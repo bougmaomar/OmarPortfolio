@@ -4,8 +4,8 @@ export default defineEventHandler((event) => {
   const base = String(useRuntimeConfig().public.siteUrl || '').replace(/\/$/, '')
 
   const locales = [
-    { prefix: '', lang: 'en-US', isDefault: true },
-    { prefix: '/fr', lang: 'fr-FR', isDefault: false },
+    { prefix: '', lang: 'fr-FR', isDefault: true },
+    { prefix: '/en', lang: 'en-US', isDefault: false },
     { prefix: '/ar', lang: 'ar', isDefault: false },
   ]
 

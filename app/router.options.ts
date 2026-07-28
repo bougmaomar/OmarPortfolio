@@ -12,7 +12,7 @@ export default <RouterConfig>{
       return savedPosition
     }
     // Locale switch keeps the same single page but a different path prefix
-    // (e.g. "/" → "/fr/"). Keep the current scroll position instead of resetting.
+    // (e.g. "/" → "/en/"). Keep the current scroll position instead of resetting.
     if (to.path !== from.path) {
       return false
     }

@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     preset: 'static',
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/fr/', '/ar/', '/pricing', '/fr/pricing', '/ar/pricing', '/sitemap.xml', '/robots.txt'],
+      routes: ['/', '/en/', '/ar/', '/pricing', '/en/pricing', '/ar/pricing', '/sitemap.xml', '/robots.txt'],
       failOnError: false,
     },
   },
@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   },
   modules: ['@nuxtjs/i18n'],
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'fr',
     strategy: 'prefix_except_default',
     // No auto-redirect based on browser language: with static hosting the
     // switch happens client-side after load, which briefly mixes locales in
@@ -30,8 +30,8 @@ export default defineNuxtConfig({
     detectBrowserLanguage: false,
     baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://omarbougma.com',
     locales: [
-      { code: 'en', language: 'en-US', name: 'English', dir: 'ltr', file: 'en.json' },
       { code: 'fr', language: 'fr-FR', name: 'Français', dir: 'ltr', file: 'fr.json' },
+      { code: 'en', language: 'en-US', name: 'English', dir: 'ltr', file: 'en.json' },
       { code: 'ar', language: 'ar', name: 'العربية', dir: 'rtl', file: 'ar.json' },
     ],
     langDir: 'locales',
