@@ -128,6 +128,8 @@
     "imagePlaceholder": "Capture d'écran à venir",
     "maintenanceLink": "→ Le garder en marche après le lancement",
     "visit": "Voir le site →",
+    "more": "Plus de détails →",
+    "viewAll": "Voir tous les projets en détail →",
     "items": [
       {
         "name": "BlueSky - SaaS de comptabilité & budgétisation",
@@ -166,6 +168,26 @@
         "note": ""
       }
     ]
+  },
+  "projectsPage": {
+    "seoTitle": "Projets - un regard de plus près sur ce que j'ai construit {'|'} Omar Bougma",
+    "seoDescription": "Un regard de plus près sur mes projets : le portfolio d'un artisan marocain, MeinLedger, Fintbib et BlueSky — le problème, ce que j'ai construit, et où en est chacun.",
+    "eyebrow": "Travaux sélectionnés",
+    "title": "Un regard de plus près sur ce que j'ai construit.",
+    "intro": "Les mêmes projets, avec plus d'espace : le problème derrière chacun, ce que j'ai construit, quelques écrans de plus, et où en est le projet aujourd'hui.",
+    "galleryLabel": "De plus près",
+    "prev": "Projet précédent",
+    "next": "Projet suivant",
+    "counter": "Projet {n} sur {total}",
+    "challengeLabel": "Le défi",
+    "buildLabel": "Ce que j'ai construit",
+    "resultLabel": "Le résultat",
+    "stackLabel": "Réalisé avec",
+    "shots": ["Vue d'ensemble", "De plus près", "En contexte"],
+    "visit": "Voir le site en ligne →",
+    "ctaTitle": "Un projet comme ceux-ci en tête ?",
+    "ctaSub": "Dites-moi ce que vous voulez construire, et je reviens avec un devis clair et fixe.",
+    "cta": "Démarrer une conversation"
   },
   "testimonials": {
     "eyebrow": "Témoignages",

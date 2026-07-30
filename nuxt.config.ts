@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     preset: 'static',
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/en/', '/ar/', '/pricing', '/en/pricing', '/ar/pricing', '/sitemap.xml', '/robots.txt'],
+      routes: ['/', '/en/', '/ar/', '/pricing', '/en/pricing', '/ar/pricing', '/projects', '/en/projects', '/ar/projects', '/sitemap.xml', '/robots.txt'],
       failOnError: false,
     },
   },
