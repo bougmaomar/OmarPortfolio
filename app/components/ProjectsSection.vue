@@ -1,7 +1,6 @@
 <script setup>
 defineProps({ id: String })
 const { t } = useI18n()
-const localePath = useLocalePath()
 
 // Media keyed by the locale item index (0 BlueSky, 1 MeinLedger, 2 Fintbib,
 // 3 Artist). `slug` anchors the matching section on the detailed /projects page.
@@ -25,10 +24,8 @@ const items = computed(() =>
     img: media[i].img,
     link: media[i].link,
     slug: media[i].slug,
-    detail: `${localePath('/projects')}#${media[i].slug}`,
   }))
 )
-const allProjectsPath = computed(() => localePath('/projects'))
 
 // Carousel: one project shows at a time; prev/next slide the track horizontally
 // (right-to-left when advancing).
@@ -102,10 +99,8 @@ const failed = reactive({})
                   <h3 class="pc__name serif">{{ p.name }}</h3>
                   <p class="pc__problem">{{ p.problem }}</p>
                   <p class="pc__outcome">{{ p.outcome }}</p>
-                  <div class="pc__actions">
-                    <NuxtLink :to="p.detail" class="pc__more">{{ t('projects.more') }}</NuxtLink>
+                  <div v-if="p.link" class="pc__actions">
                     <a
-                      v-if="p.link"
                       :href="p.link"
                       target="_blank"
                       rel="noopener"
@@ -141,10 +136,6 @@ const failed = reactive({})
             @click="go(idx)"
           />
         </div>
-      </div>
-
-      <div v-reveal class="projects__foot">
-        <NuxtLink :to="allProjectsPath" class="projects__all">{{ t('projects.viewAll') }}</NuxtLink>
       </div>
     </div>
   </section>
@@ -250,20 +241,13 @@ const failed = reactive({})
   margin-top: 24px;
   flex-wrap: wrap;
 }
-.pc__more {
+.pc__visit {
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--honey);
   transition: color 0.2s var(--ease);
 }
-.pc__more:hover { color: var(--honey-soft); }
-.pc__visit {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--sage);
-  transition: color 0.2s var(--ease);
-}
-.pc__visit:hover { color: var(--pine); }
+.pc__visit:hover { color: var(--honey-soft); }
 
 /* Arrows */
 .pc__arrow {
@@ -302,17 +286,6 @@ const failed = reactive({})
 .pc__dot:hover { background: var(--sage); }
 .pc__dot.is-active { background: var(--honey); }
 .pc__dot:focus-visible { outline: 2px solid var(--honey); outline-offset: 3px; }
-
-.projects__foot { margin-top: clamp(28px, 4vw, 40px); }
-.projects__all {
-  font-size: 0.98rem;
-  font-weight: 600;
-  color: var(--pine);
-  border-bottom: 1px solid rgba(23, 58, 51, 0.25);
-  padding-bottom: 3px;
-  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
-}
-.projects__all:hover { color: var(--honey); border-color: var(--honey); }
 
 @media (max-width: 820px) {
   .pc__slide {
